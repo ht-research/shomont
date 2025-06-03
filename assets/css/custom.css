@@ -1,0 +1,32 @@
+header nav ul#navblock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul#navblock li{
+    margin-left: 0px;
+}
+header nav{ 
+    display: block;
+}
+header nav #timer-block ul#timeholder{
+    width: 152px;
+}
+header nav a#logo-block {
+    display: block;
+    position: relative;
+    left: 0;
+    left: max(0, 0); 
+    transition:none !important;
+}
+header nav ul#navblock li a#logo-block:hover {
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
