@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<title>Shomont | Services</title>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/bhq0cwo.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/bhq0cwo.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/sgm4bit.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/sgm4bit.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+	<link rel="shortcut icon" href="../assets/images/Favicon.png" type="image/png">
+    <meta property="og:image" content="../assets/images/shomont-thumbnail.jpg" />
+    <style type="text/css">
+    	#contact-block{
+			width:100%;
+			position: relative;
+			padding-top: 44px;
+		}
+		.service-inner-wrap{
+			width:100%;
+			display:flex;
+			display:-webkit-flex;
+			display:-moz-flex;
+			display:-ms-flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.right-service-block{
+			overflow: hidden;
+			height:max-content;
+			margin-top:0.68vw;
+		}
+		.right-service-block .item-contact{
+			will-change:transform;
+			width:100%;
+			height:100%;
+		}
+		.right-service-block .item-home{
+			padding:2.972vw 2.705vw;
+			box-sizing: border-box;
+		}
+		.item-contact .item-img-home-c{
+			width:26.423vw;
+			height:31.215vw;
+    		--overflow: 50px;
+    		background-image: url('../assets/images/services-banner-lg.jpg');
+    		background-size: cover;
+    		will-change:transform;
+		}
+		.left-service-block{
+			width:41.5vw;
+		}
+		.left-service-block .service-description-block{
+			position: relative;
+		}
+		.left-service-block .service-description-block p#subtxt{
+			position: absolute;
+			left:0;
+			top:0;
+			width:65.07vw;
+			z-index:3;
+		}
+		.left-service-block h1{
+			font-family:"freight-display-pro",sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 9vw;
+			line-height: 75%;
+			letter-spacing: -0.015em;
+			color: #FFFFFF;
+			position: relative;
+			z-index:3;
+		}
+		.left-service-block h1 span{
+			/*display: block;*/
+		}
+		.left-service-block h1 p.animate-line{
+			position: relative;
+			margin-top:calc(-1*3vw);
+		}
+		.left-service-block h1 p.animate-line::after{
+			content:'';
+			position: absolute;
+			bottom:2.58vw;
+			left:24vw;
+			width:34.8vw;
+			height:1px;
+			z-index: 3;
+			background-color: #fff;
+			transform:scaleX(0);
+			-webkit-transform:scaleX(0);
+			-moz-transform:scaleX(0);
+			-ms-transform:scaleX(0);
+			transform-origin:0 0;
+			-webkit-transform-origin:0 0;
+			-moz-transform-origin:0 0;
+			-ms-transform-origin:0 0;
+			transition: transform 0.6s cubic-bezier(.85,.03,.29,.94) 1s;
+		}
+		.left-service-block h1 p.animate-line.show::after{
+			transform:scaleX(1);
+			-webkit-transform:scaleX(1);
+			-moz-transform:scaleX(1);
+			-ms-transform:scaleX(1);
+		}
+		.left-service-block h1 span:nth-child(2){
+			font-style: italic;
+		}
+		.left-service-block p#subtxt{
+			font-family:"freight-display-pro",sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 1.8vw;
+			line-height: 160%;
+			color: #BB877A;
+			box-sizing: border-box;
+			margin-top:2.8vw;
+		}
+		.left-service-block p#subtxt span{
+			display: block;
+		}
+		.left-service-block .contact-info-block{
+			display:flex;
+			display:-webkit-flex;
+			display:-moz-flex;
+			display:-ms-flex;
+			justify-content: flex-start;
+			align-items: center;
+			
+		}
+		.left-service-block .contact-info-block.mobile-info{
+			margin-top:2.8vw;
+		}
+		.left-service-block .contact-info-block p.subtitle{
+			font-family:"freight-display-pro",sans-serif;
+			font-style: italic;
+			font-weight: 300;
+			font-size: 4.18vw;
+			line-height: 100%;
+			letter-spacing: -0.015em;
+			color: rgba(255, 255, 255, 0.4);
+			margin-right:1.7vw;
+		}
+		.contact-info-block p.subvalue{
+			font-family:"freight-display-pro",sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2.8vw;
+			line-height: 136.6%;
+			letter-spacing: 0.02em;
+			color: #FFFFFF;
+		}
+		.contact-info-block p.subvalue span a{
+			color:#fff;
+		}
+		p.subvalue span.bottom-line::before{
+			transform:scaleX(1);
+			width:100%;
+			height:2px;
+			bottom:0.3vw;
+			background-color:#BB877A;
+		}
+		#body-wrapper main .inner-wrapper footer{
+			margin-top:5vw;
+		}
+		.txt-para{
+    		opacity:0;
+			transform: translateY(20px);
+			-webkit-transform: translateY(20px);
+			-moz-transform: translateY(20px);
+			-ms-transform: translateY(20px);
+			transition: all 0.5s cubic-bezier(.66,.15,.33,.71) 0.4s;
+    	}
+    	.txt-para.delay-para{
+    		transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 1s;
+    	}
+    	.txt-para.reappear{
+    		opacity:1;
+			transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+    	}
+    	.right-service-block .item-home .item-img-home,.left-image-wrapping .item-img-home{
+    		position: relative;
+    	}
+    	.right-service-block .item-home .item-img-home::after,.left-image-wrapping .item-img-home::after{
+    		content:'';
+			position: absolute;
+			left:-1px;
+			top:-1px;
+			background-color:#082C36;
+			width:101%;
+			height:101%;
+			will-change:transform;
+			transform: scaleX(1);
+			-webkit-transform: scaleX(1);
+			-moz-transform: scaleX(1);
+			-ms-transform: scaleX(1);
+			transform-origin:0 0%;
+			-webkit-transform-origin:0 0%;
+			-moz-transform-origin:0 0%;
+			-ms-transform-origin:0 0%;
+			transition: transform 1.4s cubic-bezier(.85,.13,.17,.97);
+    	}
+    	.right-service-block .item-home .item-img-home.reveal::after,.left-image-wrapping .item-img-home.reveal::after{
+    		transform: scaleX(0);
+			-webkit-transform: scaleX(0);
+			-moz-transform: scaleX(0);
+			-ms-transform: scaleX(0);
+    	}
+    	#body-wrapper main .inner-wrapper{
+    		padding-bottom: 0vw;
+    	}
+
+		@media screen and (max-width: 768px){
+			#body-wrapper main .inner-wrapper{
+	    		padding-bottom: 0vw;
+	    	}
+			#contact-block{
+				padding-top:55px;
+			}
+			.service-inner-wrap{
+				flex-direction: column-reverse;
+			}
+			.right-service-block{
+				width:100%;
+			}
+			.right-service-block .item-home{
+				display:flex;
+				display:-webkit-flex;
+				display:-moz-flex;
+				display:-ms-flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+				padding: 6.972vw 11.71vw;
+			}
+			.item-contact .item-img-home-c{
+			    width: 47.24vw;
+			    height: 41.34vw;
+			}
+			.left-service-block h1{
+				font-size: 15.28vw;
+				line-height: 87%;
+			}
+			.left-service-block{
+				margin-top: calc(-1*30vw);
+   				z-index: 3;
+   				width:100%;
+			}
+			.left-service-block h1 p.animate-line::after{
+				bottom: 5.5vw;
+    			left: 41vw;
+    			width:40.8vw;
+			}
+			.left-service-block .service-description-block p#subtxt{
+				position: relative;
+				margin-top:6.5vw;
+				font-size:5vw;
+				width:100%;
+			}
+			.left-service-block h1 p.animate-line{
+				margin-top:calc(-1*3vw);
+			}
+
+		
+		}
+    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
+</head>
+<body>
+	<div id="body-wrapper">
+		<main id="main-container" class="loading">
+			<div class="inner-wrapper" data-scroll>
+				<header>
+					<span class="hide-from-desktop">
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line y1="1" x2="24" y2="1" stroke="white" stroke-width="2"/>
+							<line y1="9" x2="24" y2="9" stroke="white" stroke-width="2"/>
+							<line y1="17" x2="24" y2="17" stroke="white" stroke-width="2"/>
+						</svg>
+					</span>
+					<nav>
+						<div id="timer-block">
+							<ul id="timeholder">
+								<li class="zone activezone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>	
+							</ul>
+						</div>
+						<a href="../" id="logo-block">
+							<img src="../assets/images/shomont-logo.png" alt="Shomont logo" />
+						</a>
+						<ul id="navblock">
+							<li id="close-menu" class="hide-from-desktop">
+								<svg version="1.1" id="Capa_1" fill="#BA877B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="24px" height="24px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                                <g>
+                                    <g id="close">
+                                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                                            214.2,178.5         "/>
+                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+							</li>
+							<li class="hide-from-desktop home"><a href="../">Home</a></li>
+							
+							<li><a href="../about" class="about">about us</a></li>
+							<li><a href="../services" class="services">our services</a></li>
+							<li><a href="../collections" class="collections">our collection</a></li>
+							<li><a href="../contact" class="contact">contact us</a></li>
+						</ul>
+					</nav>
+				</header>
+
+
+				<section id="contact-block">
+					<div class="service-inner-wrap">
+						<div class="left-service-block">
+							<h1>
+								<p data-animate>What</p>
+								<p data-animate class="animate-line italic">we offer</p>
+							</h1>
+							<div class="service-description-block">
+								<p id="subtxt" class="txt-para delay-para">
+									<span>
+										Simply put, Shomont is the link between the properties we represent and the travel trade in the UK and Europe. We have an in-depth understanding of our clients and travel partners, based on 20 years of commercial experience with some of the world leaders in luxury hospitality, and we use this knowledge to create rewarding, mutually beneficial connections. 
+									</span>
+								</p>
+							</div>
+						</div>
+						<div class="right-service-block background-wrapper">
+							<div class="item-contact item-home">
+								<div class="item-img-home-c item-img-home"></div>
+							</div>
+						</div>
+					</div>
+					
+				</section>
+
+				<section class="villas-hotels-block">
+					<div class="upper-title-block">
+						<div class="left-image-wrapping background-wrapper">
+							<div class="item-service item-home">
+								<div class="item-img-home"></div>
+							</div>
+						</div>
+						<h2>
+							<p data-animate class="non-delay">For</p>
+							<p data-animate class="italic non-delay">hotels, <br class="hide-from-desktop" />resorts & villas</p>
+						</h2>
+					</div>
+					<div class="para-block">
+						<p class="txt-para">
+							We are the "boots on the ground" in the UK and Europe for the clients we represent. We help them increase their exposure and expand their customer portfolio in the market, to form close, collaborative relationships with agents, bookers and partners and increase sales. 
+						</p>
+						<p class="txt-para">
+							We build up an in-depth knowledge of the portfolio of properties we represent, and work with owners and existing sales teams to understand their objectives and help them connect with their target audience. We have an extensive and carefully curated network of luxury contacts in the UK, mainland Europe and Russia, covering many segments of the industry from luxury leisure operators, meetings, events and incentives specialists and corporate travel, to concierge and lifestyle management companies.
+						</p>
+					</div>
+				</section>
+
+				<section id="services-puzzle-box">
+					<div class="services-inner-wrapper">
+						<div class="rows block_1">
+							<div class="empty-block hidden-in-mobile"></div>
+							<div class="empty-block hidden-in-mobile"></div>
+							<div class="empty-block hidden-in-mobile"></div>
+							<div class="empty-block hidden-in-mobile"></div>
+							<div class="content-block brown grid-box up-shift">
+								<span>Organisation of curated sales events and activities</span>
+							</div>
+						</div>
+						<div class="rows">
+							<div class="pair-block">
+								<h3>
+									<p data-animate class="non-delay">Our</p>
+									<p data-animate class="italic non-delay">services</p>
+								</h3>
+								<div class="empty-block hidden-in-mobile"></div>
+								<div class="content-block brown grid-box up-shift">
+									<span>Sales calls, sales blitzes, and ongoing property representation and promotion</span>
+								</div>
+							</div>
+							<div class="pair-block">
+								<div class="image-block island-block background-wrapper grid-box">
+									<div class="item-service item-home island">
+										<div class="item-img-home"></div>
+									</div>
+								</div>
+								<div class="content-block lightgrey grid-box left-shift">
+									<span>Bespoke product training with selected key partners</span>
+								</div>
+								<div class="empty-block"></div>
+							</div>
+						</div>
+						<div class="rows">
+							<div class="long-pair-block upper-long">
+								<div class="content-block grid-box top-shift">
+									<span>Brand/product positioning</span>
+								</div>
+								<div class="empty-block grid-box"></div>
+								<div class="content-block lightgrey grid-box">
+									<span>Tradeshow support and attendance</span>
+								</div>
+								<div class="image-block background-wrapper grid-box">
+									<div class="item-service item-home cheers">
+										<div class="item-img-home"></div>
+									</div>
+								</div>
+								<div class="content-block grid-box down-shift">
+									<span>
+										Development and implementation of single-partner or market-wide strategic promotions 
+									</span>	
+								</div>
+								<div class="empty-block hidden-from-desktop"></div>
+							</div>
+						</div>
+
+						<div class="rows">
+							<div class="long-pair-block bottom-long">
+								<div class="empty-block hidden-in-mobile"></div>
+								<div class="content-block grid-box top-shift">
+									<span>Opportunity conversion support</span>
+								</div>
+								<div class="content-block brown grid-box bottom-shift">
+									<span>Organisation of familiarisation trips</span>
+								</div>
+								<div class="empty-block"></div>
+
+								<div class="content-block brown grid-box bottom-shift">
+									<span>General UK and European market intelligence and advice</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="travel-partner-block">
+					<div class="travel-partner-wrapper">
+						<div class="left-block background-wrapper">
+							<div class="item-service item-home">
+								<div class="item-img-home"></div>
+							</div>
+						</div>
+						<div class="right-block">
+							<h3>
+								<p data-animate class="non-delay">For our travel</p>
+								<p data-animate class="italic non-delay">industry partners</p>
+							</h3>
+							<div class="travel-info-wrap">
+								<p class="txt-para">
+									Trust is the foundation of everything we do. We want our partners to have complete confidence that when we put a product in front of them, it is because we know what they and their clients expect. We maintain on-going relationships that let us hear directly from our partners what their clients are asking for, and we work together to help them create fulfilling experiences.  
+								</p>
+								<p class="txt-para">
+									We are able to support our partners with in-depth property and services knowledge, because of our close collaboration with owners and teams at the hotels, resorts and villas we represent.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer>
+					<ul>
+						<li>
+							<a href="../">
+								<img src="../assets/images/shomont-footer-logo.png" alt="Shomont logo">
+							</a>
+						</li>
+						
+						<li><a href="../about" class="about menu">about us</a></li>
+						<li><a href="../services" class="services menu">our services</a></li>
+						<li><a href="../collections" class="collections menu">our collection</a></li>
+						<li><a href="../contact" class="contact menu">contact us</a></li>
+					</ul>
+				</footer>
+
+			</div>
+		</main>
+	</div>
+
+
+
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"></script>
+<script type="text/javascript" src="../assets/js/timer-control.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var childLen = $('#timeholder').children('li').length;
+		setInterval(timeZoneIterate,3000);
+		var c = 0;
+		function timeZoneIterate(){
+			
+			if(c == childLen){
+				$('.zone').removeClass('activezone');
+				$('.zone:nth-child(1)').addClass('activezone');
+				c = 0;
+			}
+			else{
+				$('.zone').removeClass('activezone');
+				$('#timeholder').children('.zone:nth-child('+(c+1)+')').addClass('activezone');
+			}
+			c++;
+		}
+		
+
+	});
+	
+</script>
+<script type="text/javascript" src="../assets/js/smooth-scroll.js"></script>
+<script type="text/javascript">
+
+	// if(viewportSize > 768){
+	// 	const options = {
+	// 	root: null,
+	// 	threshold:0.5,
+	// 	rootMargin: '0px'
+	// }
+	// // const gridBox = document.querySelectorAll('.grid-box');
+	// var gridElement = document.querySelectorAll('.grid-box')
+	// const gridBox = document.querySelectorAll('.services-inner-wrapper');
+	// const observerService = new IntersectionObserver(function(entries,observer){
+	// 	entries.forEach((entry) => {
+	// 		if(!entry.isIntersecting){
+	// 			gridElement.forEach((el) => {
+	// 				el.classList.remove('switch');
+	// 			});
+	// 			return;
+	// 		}
+
+	// 		gridElement.forEach((el) => {
+	// 			el.classList.add('switch');
+	// 		});
+	// 		// entry.target.classList.add('switch');
+	// 		observer.unobserve(entry.target);
+	// 	})
+	// },options);
+
+	// // gridBox.forEach((el) =>{
+	// 	observerService.observe(gridBox[0]);
+	// // });
+	// }
+	
+
+</script>
+</body>
+</html>

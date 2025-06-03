@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<title>Shomont | About</title>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/bhq0cwo.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/bhq0cwo.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/sgm4bit.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/sgm4bit.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+	<link rel="shortcut icon" href="../assets/images/Favicon.png" type="image/png">
+    <meta property="og:image" content="../assets/images/shomont-thumbnail.jpg" />
+    <style type="text/css">
+
+    	#about-banner-block{
+    		width:100%;
+    		position: relative;
+    		margin-top:4.83vw;
+    	}
+    	#about-banner-block .about-inner-wrapper{
+    		display:flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			justify-content: space-between;
+			align-items: flex-start;
+    	}
+    	.about-right-block .item-about{
+    		padding:2.25vw 1.7vw;
+    		box-sizing: border-box;
+    	}
+    	.about-left-block .item-about{
+    		padding:1.62vw 1.69vw;
+    		box-sizing: border-box;
+    	}
+    	#left-block-outer-wrapper h2{
+    		font-style: normal;
+			font-weight: normal;
+			font-size: 1.252vw;
+			line-height: 190%;
+			color: #FFFFFF;
+			margin-top:8.5vw;
+			font-family:"presicav",sans-serif;
+    	}
+    	#left-block-outer-wrapper .left-block-txt{
+    		margin-top:4.84vw;
+    	}
+    	.para-box{
+    		width:100%;
+    		position: relative;
+    	}
+    	#left-block-outer-wrapper p,.para-box p{
+    		width:38.7vw;
+    		font-style: normal;
+			font-weight: 300;
+			font-size: 1.53vw;
+			line-height: 159%;
+			color: #fff;
+			margin-bottom:2.4vw;
+			font-family:"freight-display-pro",sans-serif;
+    	}
+    	.para-box p{
+    		font-family:"freight-display-pro",sans-serif;
+    		width:68.4vw;
+    	}
+    	.para-box p.italic{
+    		font-style: italic;
+    	}
+    	.para-box p.italic span{
+    		display:block;
+    	}
+    	#left-block-outer-wrapper p.dark{
+    		color: #BB877A;
+    	}
+    	#left-block-outer-wrapper h2 span{
+    		position: relative;
+    		display:block;
+    	}
+    	#left-block-outer-wrapper h2 span::before{
+    		transform:scaleX(0);
+    		-webkit-transform:scaleX(0);
+    		-moz-transform:scaleX(0);
+    		-ms-transform:scaleX(0);
+    		width:63vw;
+    		z-index:3;
+    		background-color: #fff;
+    	}
+    	#left-block-outer-wrapper h2 span.full-view::before{
+    		transform:scaleX(1);
+    		-webkit-transform:scaleX(1);
+    		-moz-transform:scaleX(1);
+    		-ms-transform:scaleX(1);
+    		transition: 0.6s cubic-bezier(.85,.03,.29,.94) 1s;
+    	}
+    	.about-inner-wrapper h2 span i{
+    		font-style:normal!important;
+    		color:#BB877A;
+    	}
+    	.about-inner-wrapper h2 span a{
+    		display: inline-block;
+    		opacity: 0;
+    		transform:translateY(10px);
+    		transition: 0.4s ease-in 1s;
+    	}
+    	.about-inner-wrapper h2 span a.active-now{
+    		opacity:1;
+    		transform:translateY(0px);
+    	}
+    	.about-inner-wrapper .about-left-block,.about-inner-wrapper .about-right-block{
+    		height: max-content;
+    		overflow: hidden;
+    	}
+    	.about-inner-wrapper .about-left-block .item-img-home{
+    		width:13.06vw;
+    		/*width:max(14.5rem,16.2vw);*/
+    		--overflow: 50px;
+    		/*padding-bottom:calc(16.2vw/1.04);*/
+    		height:12.53vw;
+    		background-image: url('../assets/images/about-banner-sm.jpg');
+    		background-size: cover;
+    		will-change:transform;
+    	}
+    	.about-inner-wrapper h1{
+    		position: absolute;
+    		left:50%;
+    		top:0;
+    		transform: translateX(-50%);
+    		-webkit-transform: translateX(-50%);
+    		-moz-transform: translateX(-50%);
+    		-ms-transform: translateX(-50%);
+    		font-family:"freight-display-pro",sans-serif;
+    		font-style: normal;
+			font-weight: 300;
+			font-size: 12.23vw;
+			line-height: 69%;
+			z-index:3;
+			text-align: center;
+			letter-spacing: -0.015em;
+			color: #FFFFFF;
+    	}
+    	.about-inner-wrapper h1 p{
+    		/*line-height: 100%;*/
+    	}
+    	.about-inner-wrapper h1 p:nth-child(2){
+    		margin-top:calc(-1*6vw);
+    	}
+    	.about-inner-wrapper h1 span{
+    		/*display:block;*/
+    	}
+    	
+    	.about-inner-wrapper .about-right-block .item-img-home{
+    		width:21.42vw;
+    		/*width:max(14.5rem,16.2vw);*/
+    		--overflow: 50px;
+    		/*padding-bottom:calc(16.2vw/1.04);*/
+    		height:27.56vw;
+    		
+    		background-image: url('../assets/images/about-banner-lg.jpg');
+    		background-size: cover;
+    		will-change:transform;
+    	}
+    	.signature-block{
+    		width:100%;
+    	}
+    	.signature-block img{
+    		width:20vw;
+    		position: relative;
+    		right:1.4vw;
+    		height:auto;
+    	}
+    	#body-wrapper main .inner-wrapper footer{
+    		margin-top:5vw;
+    	}
+    	.txt-para{
+    		opacity:0;
+			transform: translateY(20px);
+			-webkit-transform: translateY(20px);
+			-moz-transform: translateY(20px);
+			-ms-transform: translateY(20px);
+			transition: all 1s cubic-bezier(.66,.15,.33,.71) 0.2s;
+    	}
+    	.txt-para.delay-para{
+    		transition: all 1s cubic-bezier(.66,.15,.33,.71) 1.4s;
+    	}
+    	.txt-para.reappear{
+    		opacity:1;
+			transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+    	}
+    	.about-left-block .item-home .item-img-home, .about-right-block .item-home .item-img-home{
+    		position: relative;
+    	}
+    	.about-left-block .item-home .item-img-home::after, .about-right-block .item-home .item-img-home::after{
+    		content:'';
+    		position: absolute;
+    		left:-1px;
+    		top:-1px;
+    		background-color:#082C36;
+			width:101%;
+			height:101%;
+			will-change:transform;
+			transform: scaleX(1);
+			-webkit-transform: scaleX(1);
+			-moz-transform: scaleX(1);
+			-ms-transform: scaleX(1);
+			transform-origin:0 0%;
+			-webkit-transform-origin:0 0%;
+			-moz-transform-origin:0 0%;
+			-ms-transform-origin:0 0%;
+			transition: transform 1.4s cubic-bezier(.85,.13,.17,.97) 0.3s;
+			-webkit-transition: transform 1.4s cubic-bezier(.85,.13,.17,.97) 0.3s;
+			-moz-transition: transform 1.4s cubic-bezier(.85,.13,.17,.97) 0.3s;
+			-ms-transition: transform 1.4s cubic-bezier(.85,.13,.17,.97) 0.3s;
+    	}
+    	.about-left-block .item-home .item-img-home.reveal::after, .about-right-block .item-home .item-img-home.reveal::after{
+    		transform: scaleX(0);
+			-webkit-transform: scaleX(0);
+			-moz-transform: scaleX(0);
+			-ms-transform: scaleX(0);
+    	}
+
+    	@media screen and (max-width: 768px){
+    		#about-banner-block{
+    			margin-top:13vw;
+    		}
+    		#about-banner-block .about-inner-wrapper{
+    			flex-direction: column;
+    			position: relative;
+    		}
+    		#left-block-outer-wrapper h2{
+    			position: absolute;
+    			left:0;
+    			bottom:8vw;
+    			z-index: 3;
+    			font-size: 3.152vw;
+    			line-height: 190%;
+    		}
+    		.about-inner-wrapper h1{
+    			position: relative;
+    			font-size: 18.07vw;
+    			line-height: 92%;
+    			letter-spacing: -0.05rem;
+    			margin-top:calc(-1*16vw);
+    		}
+    		.about-left-block .item-about{
+    			padding: 4.22vw 4.2vw;
+    		}
+    		.about-inner-wrapper .about-left-block .item-img-home{
+    			width: 22.49vw;
+    			height: 21.73vw;
+    		}
+    		.about-inner-wrapper .about-right-block{
+    			width:100%;
+			    margin-top: calc(-1*14.8vw);
+    		}
+    		.about-right-block .item-about{
+    			padding: 6.25vw 10.4vw;
+			    box-sizing: border-box;
+			    display: flex;
+			    display: -webkit-flex;
+			    display: -moz-flex;
+			    display: -ms-flex;
+			    justify-content: flex-end;
+			    align-items: flex-start;
+    		}
+    		.about-inner-wrapper .about-right-block .item-img-home{
+    			height: 38.86vw;
+    			width: 30.2vw;
+    		}
+    		#left-block-outer-wrapper h2 span{
+    			width:48vw;
+    		}
+    		.left-block-txt.hide-from-desktop{
+    			margin-top:7.5vw;
+    		}
+    		.left-block-txt.hide-from-desktop p{
+    			font-family: "freight-display-pro",sans-serif;
+    			font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 162%;
+				color:#fff;
+				font-size: 4.45vw;
+				margin-bottom:10vw;
+    		}
+    		.para-box p{
+    			width:100%;
+    			font-size: 4.45vw;
+    			margin-bottom:10vw;
+    		}
+    		.left-block-txt.hide-from-desktop p.dark{
+    			color: #BB877A;
+    		}
+    		.signature-block img{
+    			width: 52.78vw;
+    			right: 3.6vw;
+    		}
+    	}
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
+</head>
+<body>
+	<div id="body-wrapper">
+		<main id="main-container" class="loading">
+			<div class="inner-wrapper" data-scroll>
+				<header>
+					<span class="hide-from-desktop">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1" x2="24" y2="1" stroke="white" stroke-width="2"/>
+                            <line y1="9" x2="24" y2="9" stroke="white" stroke-width="2"/>
+                            <line y1="17" x2="24" y2="17" stroke="white" stroke-width="2"/>
+                        </svg>               
+                    </span>
+					<nav>
+						<div id="timer-block">
+							<ul id="timeholder">
+								<li class="zone activezone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>	
+							</ul>
+						</div>
+						<a href="../" id="logo-block">
+							<img src="../assets/images/shomont-logo.png" alt="Shomont logo" />
+						</a>
+						<ul id="navblock">
+							<li id="close-menu" class="hide-from-desktop">
+                                <svg version="1.1" id="Capa_1" fill="#BA877B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="24px" height="24px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                                <g>
+                                    <g id="close">
+                                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                                            214.2,178.5         "/>
+                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+
+                            </li>
+							<li class="hide-from-desktop home"><a href="../">Home</a></li>
+                            <li><a href="../about" class="about">about us</a></li>
+                            <li><a href="../services" class="services">our services</a></li>
+							<li><a href="../collections" class="collections">our collection</a></li>
+							<li><a href="../contact" class="contact">contact us</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<section id="about-banner-block">
+					<div class="about-inner-wrapper">
+						<div id="left-block-outer-wrapper">
+							<div class="about-left-block background-wrapper">
+								<div class="item-about item-home">
+									<div class="item-img-home"></div>
+								</div>
+							</div>
+							<h2>
+								<span class="bottom-line underLine"><a class="lineTxt">MARCO MONTAGNANI, <i>FOUNDER & DIRECTOR</i>
+								</a></span>
+							</h2>
+							<div class="left-block-txt hide-in-mobile">
+								<p class="dark txt-para delay-para">
+									Over the past 30 years, I have worked in various roles within the travel industry, starting as a trainee chef in my native Tuscany and working my way around the world to become Director of Luxury Sales for Hilton Luxury Brands, based in London. 
+								</p>
+								
+								<p class="txt-para">
+									I consider myself incredibly fortunate to have found a career that combines so many of the things I am passionate about – meeting and getting to know people from all over the world, travelling to new destinations and learning about them from local people, and sharing culinary experiences. I have lived in Italy, the USA, Ireland and the UK, and I am fluent in English, Italian and Spanish. I now live in west London with my young family.
+								</p>
+								
+							</div>
+						</div>
+						<h1>
+							<p data-animate>About</p>
+							<p data-animate class="italic">us</p>
+						</h1>
+						<div class="about-right-block background-wrapper">
+							<div class="item-about item-home">
+								<div class="item-img-home"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="left-block-txt hide-from-desktop">
+					<p class="dark txt-para">
+						Over the past 30 years, I have worked in various roles within the travel industry, starting as a trainee chef in my native Tuscany and working my way around the world to become Director of Luxury Sales for Hilton Luxury Brands, based in London. 
+					</p>
+					
+					<p class="txt-para">
+						I consider myself incredibly fortunate to have found a career that combines so many of the things I am passionate about – meeting and getting to know people from all over the world, travelling to new destinations and learning about them from local people, and sharing culinary experiences. I have lived in Italy, the USA, Ireland and the UK, and I am fluent in English, Italian and Spanish. I now live in west London with my young family.
+					</p>
+					
+				</div>
+
+				<section class="para-box">
+					<p class="txt-para">
+						Since 2000, I have been working in commercial roles for some of the best luxury hotel companies in the world – Starwood, Shangri-La and Hilton Luxury, and learned a strategic approach to selling luxury travel experiences from these best-in-class operators.
+					</p>
+					
+					<p class="txt-para">
+					During this time I have built up an extensive network of contacts in the UK, one of the world’s leading leisure travel markets, as well as across mainland Europe and in Russia. I have connected with an array of partners from the luxury transient leisure, meetings, events and incentives, and corporate travel segments.
+					</p>
+					
+					<p class="txt-para">
+					Over the years I have also established a carefully curated black book of contacts covering luxury consortia, concierge companies, independent travel designers, boutique travel agencies, luxury leisure operators, large meetings and events agencies, lifestyle management companies and niche incentive specialists.	
+					</p>
+					
+					<p class="italic txt-para"> 
+					I take a collaborative approach to sales, and the questions ‘what does my client need?’ and ‘what does their customer need?’ are always at the front of my mind. Combined with my professional experience, this allows me to find the right solutions for the hotels, villas and resorts I represent, and the travel partners I connect them with. My goal is to be a trusted advisor to both groups. 
+					</p>
+					
+					<p class="italic txt-para" style="margin-bottom:0;">
+					<span>Please reach out if you would like to talk about representation for your property,</span>
+					<span>I’m always happy to talk travel! </span>
+					</p>
+					<div class="signature-block">
+						<img src="../assets/images/signature.png" alt="sign" />
+					</div>	
+				</section>
+				
+				<footer>
+					<ul>
+						<li>
+							<a href="../">
+								<img src="../assets/images/shomont-footer-logo.png" alt="Shomont logo">
+							</a>
+						</li>
+                        <li><a href="../about" class="about menu">about us</a></li>
+                        <li><a href="../services" class="services menu">our services</a></li>
+						<li><a href="../collections" class="collections menu">our collection</a></li>
+						<li><a href="../contact" class="contact menu">contact us</a></li>
+					</ul>
+				</footer>
+
+			</div>
+		</main>
+	</div>
+
+
+
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"></script>
+<script type="text/javascript" src="../assets/js/timer-control.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var childLen = $('#timeholder').children('li').length;
+		setInterval(timeZoneIterate,3000);
+		var c = 0;
+		function timeZoneIterate(){
+			
+			if(c == childLen){
+				$('.zone').removeClass('activezone');
+				$('.zone:nth-child(1)').addClass('activezone');
+				c = 0;
+			}
+			else{
+				$('.zone').removeClass('activezone');
+				$('#timeholder').children('.zone:nth-child('+(c+1)+')').addClass('activezone');
+			}
+			c++;
+		}
+		
+
+	});
+	
+</script>
+<script type="text/javascript" src="../assets/js/smooth-scroll.js"></script>
+
+</body>
+</html>

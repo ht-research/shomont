@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<title>Shomont | The Villa Thailand</title>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/bhq0cwo.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/bhq0cwo.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="https://use.typekit.net/sgm4bit.css"  crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+	<noscript><link rel="stylesheet" href="https://use.typekit.net/sgm4bit.css" crossorigin="anonymous"></noscript>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+	<link rel="shortcut icon" href="../../assets/images/Favicon.png" type="image/png">
+    <meta property="og:image" content="../../assets/images/shomont-thumbnail.jpg" />
+    <style type="text/css">
+
+	.banner-block{
+		width:100%;
+		margin-top:4.2vw;
+		position: relative;
+	}
+	.item-collection-home{
+		width:100%;
+		overflow: hidden;
+		/*padding:2.25vw 0;*/
+	}
+	.item-collection-home .item-collection{
+		/*width:14.5rem;*/
+		width:100vw;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 60px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:34.45vw;
+		/*background-image: url('../../assets/images/thail-banner.jpg');*/
+		background-image: url('../../assets/images/villa-thail-detail-banner.jpg');
+		background-size: contain;
+		will-change:transform;
+	}
+
+	#overview-block{
+		width:100%;
+		margin-top:7vw;
+	}
+	#overview-block .overview-wrapper{
+		width:100%;
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#overview-block .overview-wrapper .content-box{
+	/*	width:42.65vw;*/
+		width:39.65vw;
+	}
+	.overview-wrapper .content-box h3{
+		font-style: italic;
+		font-weight: 300;
+		font-size: 4.2vw;
+		line-height: 119%;
+		/* identical to box height, or 193% */
+		letter-spacing: -0.015em;
+		font-family:"freight-display-pro",sans-serif;
+		color: #BB877A;
+		position: relative;
+		opacity:0;
+		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+		-moz-transform: translateY(30px);
+		transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+		-webkit-transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+		-moz-transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+	}
+	.overview-wrapper .content-box h3.reappear{
+		opacity:1;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+	}
+	/*.overview-wrapper .content-box h3::before{
+		content:'';
+		position: absolute;
+		top:calc(-1*1vw);
+		left:4vw;
+		width:2px;
+		height:9.4vw;
+		background-color:#BB877A;
+		transform:translateY(-100%) scaleY(1);
+		-webkit-transform:translateY(-100%) scaleY(1);
+		-moz-transform:translateY(-100%) scaleY(1);
+	}*/
+	.overview-wrapper .content-box ul.txt-para{
+		margin-top:2vw;
+		width:100%;
+		margin-bottom:0;
+	}
+	.overview-wrapper .content-box ul li{
+		list-style: none;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 1.4vw;
+		line-height: 130%;
+		/* or 92% */
+		letter-spacing: 2%;
+		color: #FFFFFF;
+		margin-bottom:1.2vw;
+	}
+	.overview-wrapper .content-box ul li a{
+		display: inline-block;
+		line-height:1.1;
+		border-bottom: 2px solid #BB877A;
+	}
+	.overview-wrapper .content-box ul li:last-child{
+		margin-bottom:0;
+	}
+
+	.item-overview-home{
+		width:31.82vw;
+		height:41vw;
+		overflow: hidden;
+		position: relative;
+	}
+	.img-with-txt span{
+		font-style: italic;
+		font-weight: normal;
+		font-size: 1.21vw;
+		line-height: 219%;
+		color: #FFFFFF;
+		opacity: 0.5;
+		font-family:"freight-display-pro",sans-serif;
+		transform: translateY(100%);
+		transform: translateY(100%);
+		transform: translateY(100%);
+	}
+	.item-overview-home .item-overview{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/thail-overview.jpg');
+		background-size: cover;
+		will-change:transform;
+	}
+	.banner-wrap-text{
+		position: absolute;
+		bottom:calc(-1*1.4vw);
+		left:0;
+	}
+	.banner-wrap-text h2{
+		font-family:"freight-display-pro",sans-serif;
+		font-weight: 300;
+		font-size: 9.2vw;
+		line-height: 87%;
+		letter-spacing: -0.015em;
+		color: #FFFFFF;
+		position: relative;
+		z-index:2;
+	}
+	.banner-wrap-text h2::before{
+		content:'';
+		position: absolute;
+		left:0;
+		bottom:calc(-1*2.5vw);
+		width:40.5vw;
+		height:16vw;
+		background-color:#082C36;
+	}
+	.banner-wrap-text h2 span{
+		display: block;
+		position: relative;
+		opacity:0;
+		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+		-moz-transform: translateY(30px);
+		transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+		-webkit-transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+		-moz-transition: all 0.8s cubic-bezier(.66,.15,.33,.71) 0.2s;
+	}
+	.banner-wrap-text h2 span.italic{
+		font-size:7.64vw;
+	}
+	.banner-wrap-text h2 span.reappear{
+		opacity:1;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+	}
+	#image-collection-block{
+		width:100%;
+		margin-top:7vw;
+	}
+	#image-collection-block .collection-wrapper,#image-collection-block-next .collection-wrapper,
+	#image-text-block-next .collection-wrapper{
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	#image-text-block-next{
+		margin-top:7vw;
+	}
+	#image-text-block-next .text-box{
+		width:40.6vw;
+	}
+	#body-wrapper main .inner-wrapper .contact-us-section{
+		margin-top:7vw;
+	}
+	#image-text-block-next .item-image-text-block{
+		width:34.4vw;
+		height:30.7vw;
+		overflow: hidden;
+		position: relative;
+	}
+	#image-text-block-next .item-image-text-block .item-image-right-text{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/villa-thai-img-block.jpg');
+		/*background-size: cover;*/
+		will-change:transform;
+	}
+	.item-side-home .item-view-left{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/left-thai-villa.jpg');
+		background-size: cover;
+		will-change:transform;
+	}
+	.item-side-left{
+		width:44.5vw;
+		height:28.4vw;
+		overflow: hidden;
+		position: relative;
+	}
+	.item-side-right{
+		width:31.82vw;
+		height:28.4vw;
+		overflow: hidden;
+		position: relative;
+	}
+	.item-side-left-lower{
+		overflow: hidden;
+		height:30.1vw;
+		width:50.7vw;
+		position: relative;
+	}
+	.item-side-right-lower{
+		width:26.4vw;
+		height:30.1vw;
+		overflow: hidden;
+		position: relative;
+	}
+	.item-side-home .item-view-right{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/right-thai-villa.jpg');
+		background-size: cover;
+		will-change:transform;
+	}
+	.item-side-left-lower .item-view-left-lower{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/villa-thai-left-lower.jpg');
+		background-size: cover;
+		will-change:transform;
+	}
+	.item-side-right-lower .item-view-right-lower{
+		/*width:14.5rem;*/
+		width:100%;
+		/*padding:2.8vw 1.868vw;*/
+		box-sizing: border-box;
+		/*width:max(14.5rem,16.2vw);*/
+		--overflow: 50px;
+		/*padding-bottom:calc(16.2vw/1.04);*/
+		height:100%;
+		background-image: url('../../assets/images/villa-thail-right-lower.jpg');
+		background-size: cover;
+		will-change:transform;
+	}
+	.txt-para {
+		width: 61.15vw;
+	    font-style: normal;
+	    font-weight: 300;
+	    font-size: 1.53vw;
+	    line-height: 159%;
+	    color: #fff;
+	    margin:6vw 0;
+    	font-family: "freight-display-pro",sans-serif;
+	    opacity: 0;
+	    transform: translateY(20px);
+	    -webkit-transform: translateY(20px);
+	    -moz-transform: translateY(20px);
+	    -ms-transform: translateY(20px);
+	    transition: all 1s cubic-bezier(.66,.15,.33,.71) 0.2s;
+	}
+	.txt-para#subtxt::first-letter{
+		font-size:6.12vw;
+	} 
+	.txt-para.reappear {
+	    opacity: 1;
+	    transform: translateY(0px);
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	}
+	#image-text-block-next .text-box .txt-para{
+		width:100%;
+		margin:0 0 2.4vw 0;
+	}
+	.collection-link{
+		font-family: "presicav",sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 1.252vw;
+	    line-height: 1.9;
+	    letter-spacing: -0.015em;
+	    color: #BA877B;
+	    display: block;
+	    text-align: left;
+	    position: relative;
+	}
+	.collection-link::before {
+		width:52vw;
+		z-index:3;
+	    transform: scaleX(1);
+	    -webkit-transform: scaleX(1);
+	    -moz-transform: scaleX(1);
+	    -ms-transform: scaleX(1);
+	}
+	.collection-link-wrap{
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.collection-link-wrap #left-arrow{
+		width:6.85vw;
+		height:6.85vw;
+		border-radius: 50%;
+		border:1px solid #BB877A;
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 1.2vw;
+	    transition: all 0.3s ease-in;
+    	-webkit-transition: all 0.3s ease-in;
+    	-moz-transition: all 0.3s ease-in;
+    	-ms-transition: all 0.3s ease-in;
+	}
+	.collection-link-wrap #left-arrow:hover{
+	    background-color: #BB877A;
+	}
+	.collection-link-wrap .collection-link:hover{
+		color:#fff;
+	}
+	.back-to-collection{
+		margin:9.6vw 0 7vw 0;
+	}
+	.back-to-collection .collection-link::before{
+		width:32vw;
+	}
+	#body-wrapper main .inner-wrapper .contact-us-section #txt-wrapper{
+		max-width: 48vw!important;
+	}
+
+	@media screen and (max-width:768px){
+		#overview-block .overview-wrapper,
+		#image-collection-block .collection-wrapper, 
+		#image-collection-block-next .collection-wrapper,
+		#image-text-block-next .collection-wrapper{
+			flex-direction: column;
+		}
+		#image-text-block-next .item-image-text-block .item-image-right-text{
+			background-size: cover;
+		}
+		.back-to-collection .collection-link::before {
+		    width: 69vw;
+		}
+		.txt-para{
+			font-size:4.45vw;
+			width:100%;
+			margin:7vw 0;
+		}
+		#overview-block{
+			margin-top:22vw;
+		}
+		.overview-wrapper .content-box h3{
+			font-size:10.67vw;
+		}
+		.overview-wrapper .content-box ul li{
+			font-size:4.45vw;
+			margin-bottom: 4.2vw;
+		}
+		#overview-block .overview-wrapper .content-box{
+			width:100%;
+			margin-bottom:7vw;
+		}
+		.item-overview-home{
+			width:100%;
+			height:110vw;
+		}
+		.item-side-left{
+			height:51.6vw;
+			margin-bottom: 7vw;
+		}
+		.item-side-right{
+			height:73vw;
+		}
+		.img-with-txt,.item-side-left, .item-side-right{
+			width:100%;
+
+		}
+		.item-collection-home .item-collection{
+			height:80vw;
+			background-size: contain;
+		    background-image: url(../../assets/images/mobile-thai-img.jpg);
+		    background-position: center center;
+    		background-repeat: no-repeat;
+		}
+		.banner-wrap-text h2{
+			font-size:17.2vw;
+		}
+		.banner-wrap-text h2::before{
+			height:33vw;
+		}
+		.banner-wrap-text{
+			bottom:-20px;
+		}
+		.item-side-left-lower{
+			width:100%;
+			height:50vw;
+			margin-bottom:7vw;
+		}
+		.item-side-right-lower{
+			width:100%;
+			height:101vw;
+		}
+		#image-text-block-next .text-box,#image-text-block-next .item-image-text-block{
+			width:100%;
+		}
+		#image-text-block-next .text-box{
+			margin-bottom:7vw;
+		}
+		#image-text-block-next .item-image-text-block{
+			height:73vw;
+		}
+		#body-wrapper main .inner-wrapper .contact-us-section #txt-wrapper {
+		    max-width: 70vw!important;
+		}
+		.collection-link-wrap #left-arrow{
+			width:12vw;
+			height:12vw;
+			margin-right:19px;
+		}
+		.collection-link-wrap #left-arrow img{
+			width:12px;
+			position: relative;
+    		right: 1px;
+		}
+		.collection-link{
+			font-size:3.6vw;
+		}
+		.back-to-collection {
+		    margin: 15.6vw 0 16vw 0;
+		}
+		#body-wrapper main .inner-wrapper .contact-us-section{
+			margin-top: calc(7vw + 20px);
+		}
+	}
+ 	
+    </style>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="../../assets/css/style.css"></noscript>
+</head>
+<body>
+	<div id="body-wrapper">
+		<main id="main-container" class="loading">
+			<div class="inner-wrapper" data-scroll>
+				<header>
+					<span class="hide-from-desktop">
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line y1="1" x2="24" y2="1" stroke="white" stroke-width="2"/>
+							<line y1="9" x2="24" y2="9" stroke="white" stroke-width="2"/>
+							<line y1="17" x2="24" y2="17" stroke="white" stroke-width="2"/>
+						</svg>
+					</span>
+					<nav>
+						<div id="timer-block">
+							<ul id="timeholder">
+								<li class="zone activezone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>
+								<li class="zone"></li>	
+							</ul>
+						</div>
+						<a href="../../" id="logo-block">
+							<img src="../../assets/images/shomont-logo.png" alt="Shomont logo" />
+						</a>
+						<ul id="navblock">
+							<li id="close-menu" class="hide-from-desktop">
+								<svg version="1.1" id="Capa_1" fill="#BA877B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     width="24px" height="24px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                                <g>
+                                    <g id="close">
+                                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                                            214.2,178.5         "/>
+                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                                </g>
+                                </svg>
+							</li>
+							<li class="hide-from-desktop home"><a href="../../">Home</a></li>
+							
+							<li><a href="../../about" class="about">about us</a></li>
+							<li><a href="../../services" class="services">our services</a></li>
+							<li><a href="../../collections" class="collections">our collection</a></li>
+							<li><a href="../../contact" class="contact">contact us</a></li>
+						</ul>
+					</nav>
+				</header>
+
+
+				<section class="banner-block">
+					<div class="background-wrapper item-collection-home">
+						<div class="item-collection item-home">
+							<div class="item-img-home"></div>
+						</div>
+
+					</div>
+					<div class="banner-wrap-text">
+						<h2>
+							<span>The Villa</span> 
+							<span class="italic">Thailand</span>
+						</h2>
+					</div>	
+				</section>
+
+				<section id="overview-block">
+					<div class="overview-wrapper">
+						<div class="content-box">
+							<h3>Overview</h3>
+							<ul class="txt-para">
+								<li>- 8 individual villas</li>
+								<li>- Complete privacy and exclusivity for up to 16 guests</li>
+								<li>- 70 full-time members of staff</li>
+								<li>- Over 1000 sqm of salt water infinity pools surrounding the villas</li>
+								<li>- 9 unique dining areas</li>
+								<li>- Home cinema, games room, gym, as well as a luxury spa</li>
+								<li>- Fully equipped beach less than 5 minutes away with use of 4 different boats including a 40ft motorboat for excursions to nearby islands,  as well the use of 12 “watertoys” including, flyboard, jetskis and more relaxing inflatable toys
+								</li>
+								<li>
+									- For more info, full factsheet or to discuss your curated experience please <a href="../../contact" class="italic">contact us</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="img-with-txt">
+							<div class="item-overview-home">
+								<div class="item-overview item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="image-collection-block">
+					<div class="collection-wrapper">
+						<div class="img-with-txt">
+							<div class="item-side-home item-side-left">
+								<div class="item-view-left item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="img-with-txt">
+							<div class="item-side-home item-side-right">
+								<div class="item-view-right item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="middle-txt-block">
+					<p id="subtxt" class="txt-para">
+							The story of the THE Villa began in the 1980s when a young Swedish entrepreneur started travelling to Taiwan to set up his own manufacturing business. During a flight back home to Stockholm via Bangkok, he found himself in Business Class and struck up a conversation with another passenger, who told him of his plans to build a luxury villa in a secluded region of Thailand. The Swedish businessman was invited to check out the area and was startled by its natural beauty – and by its potential. When he saw a large plot of land for sale – one with an amazing view of the ocean and access to several spectacular beaches – he jumped at the opportunity. With 25 years of experience building factories in Taiwan, he was able to start construction of an unparalleled luxury resort, one that mixes exclusivity, natural beauty and a rare level of environmental consciousness. 
+					</p>
+				</section>
+
+				<section id="image-collection-block-next">
+					<div class="collection-wrapper">
+						<div class="img-with-txt">
+							<div class="item-side-home item-side-left-lower">
+								<div class="item-view-left-lower item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="img-with-txt">
+							<div class="item-side-home item-side-right-lower">
+								<div class="item-view-right-lower item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="image-text-block-next">
+					<div class="collection-wrapper">
+						<div class="text-box">
+							<p class="txt-para">
+								THE Villa is one of the most luxurious private destinations in Asia, it is the perfect super-luxury destination for families, groups of friends or exclusive corporate gatherings and offers complete privacy and unparallel service.
+							</p>
+							<p class="txt-para">
+								The property comprises seven lavish villas and three salt-water infinity pools, no expense was spared on any of the materials used or the meticulous Thai craftsmanship, with tranquil outdoor spaces paved with polished granite, while special stonework, such as onyx or limestone, and teak floorings evoke the beauty of nature in its interiors.
+							</p>
+							<p class="txt-para">
+								Guests can choose one of the 9 dining spaces where private chefs can create sumptuous fine-dining experiences inspired by French, Thai, Japanese and Moroccan cuisines, among other, many of the ingredients are actually grown on site, on the resort’s farm.
+							</p>
+						</div>
+						<div class="img-with-txt">
+							<div class="item-image-text-block">
+								<div class="item-image-right-text item-home">
+									<div class="item-img-home"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+				<section class="contact-us-section">
+					<div class="background-wrapper item-contact-home">
+						<div class="item-contact item-home">
+							<div class="item-img-home"></div>
+						</div>
+					</div>
+					<<!-- img src="assets/images/home-contact-banner.jpg" alt="contact illustration" /> -->
+					<div id="txt-wrapper">
+					
+						<h2 class="flying-txt">Interested in this property? Do you want to know more?
+							<span>Let’s connect</span>
+						</h2>
+						<span class="contact-line bottom-line"><a href="../../contact">Contact Us</a></span>
+					</div>
+				</section>
+
+				<section class="back-to-collection">
+					<a href="../" class="collection-link-wrap">	
+						<div id="left-arrow">
+							<img src="../../assets/images/white-left-chev.svg">
+						</div>
+						<span class="collection-link bottom-line">
+							<span class="lineTxt">back to our collection</span>
+						</span>
+					</a>
+				</section>
+
+				<footer>
+					<ul>
+						<li>
+							<a href="../../">
+								<img src="../../assets/images/shomont-footer-logo.png" alt="Shomont logo">
+							</a>
+						</li>
+						
+						<li><a href="../../about" class="about menu">about us</a></li>
+						<li><a href="../../services" class="services menu">our services</a></li>
+						<li><a href="../../collections" class="collections menu">our collection</a></li>
+						<li><a href="../../contact" class="contact menu">contact us</a></li>
+					</ul>
+				</footer>
+
+			</div>
+		</main>
+	</div>
+
+
+
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"></script>
+<script type="text/javascript" src="../../assets/js/timer-control.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var childLen = $('#timeholder').children('li').length;
+		setInterval(timeZoneIterate,3000);
+		var c = 0;
+		function timeZoneIterate(){
+			
+			if(c == childLen){
+				$('.zone').removeClass('activezone');
+				$('.zone:nth-child(1)').addClass('activezone');
+				c = 0;
+			}
+			else{
+				$('.zone').removeClass('activezone');
+				$('#timeholder').children('.zone:nth-child('+(c+1)+')').addClass('activezone');
+			}
+			c++;
+		}
+		
+
+	});
+	
+</script>
+<script type="text/javascript" src="../../assets/js/smooth-scroll.js"></script>
+<script type="text/javascript">
+	var collectionReveal = document.querySelectorAll('.collection-banner-block');
+	var imgConfig = {
+	  root: null,
+	  threshold: 0.1,
+	  rootMargin: '50px'
+	};
+
+	var observerCollection = new IntersectionObserver(function (entries, observer) {
+	  entries.forEach(function (entry) {
+	    if (!entry.isIntersecting) {
+	      return;
+	    }
+
+	    entry.target.classList.add('active');
+	    observer.unobserve(entry.target);
+	  });
+	}, imgConfig);
+
+	Array.prototype.slice.call(collectionReveal).forEach(function (el) {
+      observerCollection.observe(el);
+    });
+</script>
+<script type="text/javascript">
+	$(window).on('load',function(){
+		$('.banner-wrap-text h2 span').addClass('reappear');
+		if($(window).width() > 768){
+			$(window).scroll(function(){
+				if($(window).scrollTop() > 60){
+					$('.overview-wrapper .content-box h3').addClass('reappear');
+				}
+			})
+		}
+		else{
+			$('.overview-wrapper .content-box h3').addClass('reappear');
+		}
+	})
+	
+	
+</script>
+</body>
+</html>

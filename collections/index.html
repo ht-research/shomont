@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Shomont | Collections</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.typekit.net/bhq0cwo.css"
+      crossorigin="anonymous"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://use.typekit.net/bhq0cwo.css"
+        crossorigin="anonymous"
+    /></noscript>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.typekit.net/sgm4bit.css"
+      crossorigin="anonymous"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://use.typekit.net/sgm4bit.css"
+        crossorigin="anonymous"
+    /></noscript>
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/Favicon.png"
+      type="image/png"
+    />
+    <meta
+      property="og:image"
+      content="../assets/images/shomont-thumbnail.jpg"
+    />
+    <style type="text/css">
+      #collection-block {
+        width: 100%;
+        position: relative;
+        margin-top: 4.2vw;
+      }
+      #collection-block .collection-banner-block {
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 11vw;
+      }
+      #collection-block .collection-banner-block.reverse {
+        flex-direction: row-reverse;
+      }
+      #collection-block .collection-banner-block.reverse .txt-para {
+        text-align: right;
+      }
+      #collection-block .collection-banner-block.reverse span {
+        text-align: right;
+      }
+      #collection-block .collection-banner-block.reverse span::before {
+        left: unset;
+        right: 0;
+        transform-origin: 100% 0;
+        -webkit-transform-origin: 100% 0;
+        -moz-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+      }
+      .collection-banner-block .text-block-wrapper h3 {
+        font-family: "presicav", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.7vw;
+        line-height: 100%;
+        text-align: left;
+        letter-spacing: 0.45em;
+        color: rgba(255, 255, 255, 0.7);
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+        -webkit-transform: translate3d(0, 20px, 0);
+        -moz-transform: translate3d(0, 20px, 0);
+        -ms-transform: translate3d(0, 20px, 0);
+        transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -webkit-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -moz-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -ms-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+      }
+      .collection-banner-block.active .text-block-wrapper h3 {
+        opacity: 1;
+        transform: translate3d(0, 0, 0px);
+        -webkit-transform: translate3d(0, 0, 0px);
+        -moz-transform: translate3d(0, 0, 0px);
+        -ms-transform: translate3d(0, 0, 0px);
+      }
+      .collection-banner-block.reverse .text-block-wrapper h3 {
+        text-align: right;
+      }
+      .collection-banner-block .text-block-wrapper h3 span {
+        font-style: italic;
+        font-family: "freight-display-pro", sans-serif;
+        letter-spacing: normal;
+        font-size: 0.95vw;
+        display: inline-block;
+        margin-right: 0.8vw;
+      }
+      .collection-banner-block .text-block-wrapper .empty-block {
+        width: 32.5vw;
+        width: 100%;
+        height: 13vw;
+        /*height:10vw;*/
+      }
+      .collection-banner-block .text-block-wrapper {
+        width: 45vw;
+        position: relative;
+        /*white-space: nowrap; */
+      }
+      .collection-banner-block.reverse .text-block-wrapper {
+        padding-left: 3vw;
+      }
+      .collection-banner-block.reverse .text-block-wrapper h1 p {
+        text-align: right;
+      }
+      .collection-banner-block .text-block-wrapper p.txt-para-new {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.185vw;
+        line-height: 175%;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0 0 0 0;
+        margin-top: 1.5vw;
+        opacity: 0;
+        padding-right: 24px;
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transition: all 0.5s linear 1.1s;
+      }
+      .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
+        text-align: right;
+        padding-right: 0;
+      }
+      .collection-banner-block .text-block-wrapper p.txt-para-new a {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+        line-height: 1.1;
+        font-size: 1.05vw;
+        letter-spacing: 1.4px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+      }
+      .collection-banner-block .text-block-wrapper p.txt-para-new a:hover {
+        color: #ba877b;
+        border-color: #ba877b;
+      }
+      .collection-banner-block.active .text-block-wrapper p.txt-para-new {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+      }
+      /*.collection-banner-block .text-block-wrapper p.txt-para.reappear{
+ 			opacity: 1;
+		    transform: translateY(0px);
+		    -webkit-transform: translateY(0px);
+		    -moz-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+ 		}*/
+      .collection-banner-block .text-block-wrapper span a {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+        -webkit-transform: translate3d(0, 20px, 0);
+        -moz-transform: translate3d(0, 20px, 0);
+        -ms-transform: translate3d(0, 20px, 0);
+        transition: opacity 0.5s ease-in 1.4s;
+        -webkit-transition: opacity 0.5s ease-in 1.4s;
+        -moz-transition: opacity 0.5s ease-in 1.4s;
+        -ms-transition: opacity 0.5s ease-in 1.4s;
+      }
+      .collection-banner-block.active .text-block-wrapper span a {
+        opacity: 1;
+        transform: translate3d(0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        -moz-transform: translate3d(0, 0px, 0);
+        -ms-transform: translate3d(0, 0px, 0);
+      }
+      .text-block-wrapper span.collection-link {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .text-block-wrapper span.collection-link:hover {
+        color: #fff;
+      }
+      .collection-banner-block.active .text-block-wrapper span::before {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+      }
+      .collection-banner-block .text-block-wrapper p[data-animate] {
+        transform: translate3d(0, 40px, 0);
+        -webkit-transform: translate3d(0, 40px, 0);
+        -moz-transform: translate3d(0, 40px, 0);
+        -ms-transform: translate3d(0, 40px, 0);
+        transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -webkit-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -moz-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        -ms-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+      }
+      .collection-banner-block.active .text-block-wrapper p[data-animate] {
+        transform: translate3d(0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        -moz-transform: translate3d(0, 0px, 0);
+        -ms-transform: translate3d(0, 0px, 0);
+      }
+      .text-block-wrapper span.collection-link {
+        font-family: "presicav", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.252vw;
+        line-height: 1.9;
+        margin-top: 2.2vw;
+        letter-spacing: -0.015em;
+        color: #ba877b;
+        display: block;
+        text-align: left;
+        position: relative;
+      }
+      .collection-link::before {
+        width: 52vw;
+        z-index: 3;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transition: 1.2s cubic-bezier(0.85, 0.03, 0.29, 0.94) 1.5s;
+      }
+
+      .collection-banner-block h1 {
+        position: absolute;
+        /*top:50%;
+ 			left:0;
+ 			transform:translateY(-50%);
+ 			-webkit-transform:translateY(-50%);
+ 			-moz-transform:translateY(-50%);
+ 			-ms-transform:translateY(-50%);*/
+        font-family: "freight-display-pro", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 7.292vw;
+        line-height: 85%;
+        letter-spacing: -0.015em;
+        color: #ffffff;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        overflow: visible;
+        width: 61vw;
+        /*position: relative;*/
+      }
+      .collection-banner-block h1.tag-property {
+        top: 2.5vw;
+      }
+      .collection-banner-block.reverse h1 {
+        left: unset;
+        right: 0;
+      }
+      .collection-banner-block.ritz-carlton h1 {
+        margin-top: 2vw;
+      }
+      .collection-banner-block h1 p {
+        line-height: 114%;
+        margin-top: calc(-1 * 1.5vw);
+      }
+      .collection-banner-block.w-maldives .text-block-wrapper p span:first-child {
+        font-weight: 600;
+      }
+      .collection-banner-block h1 p.italic {
+        font-size: 5.24vw;
+      }
+      .collection-banner-block h1 p.mix-up span:last-child {
+        font-style: italic;
+      }
+      /*.collection-banner-block h1 span{
+ 			display:block;
+ 		}*/
+      .item-collection-wrap {
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        overflow: hidden;
+        height: max-content;
+      }
+      /*.item-collection-wrap .item-home{
+ 			padding: 2vw 4.2vw;
+ 		}*/
+      .item-collection-wrap .item-img-home {
+        /*width:59.1vw;*/
+        width: 52vw;
+        height: 33.6vw;
+        --overflow: 50px;
+        /*background-image: url('../assets/images/villa-thai-new-banner.png');*/
+        background-image: url("../assets/images/villa-thai-banner-update.jpg");
+        background-size: cover;
+        will-change: transform;
+        position: relative;
+      }
+      .item-collection-wrap .item-img-home.dubai {
+        background-image: url("../assets/images/dubai.png");
+      }
+      .item-collection-wrap .item-img-home.santa-barbara {
+        background-image: url("../assets/images/santa-barbara-banner.jpg");
+      }
+      .item-collection-wrap .item-img-home.white-azores {
+        background-image: url("../assets/images/white-azores-banner.jpg");
+      }
+      .item-collection-wrap .item-img-home.ritz-carlton {
+        background-image: url("../assets/images/ritz-carlton.jpg");
+      }
+      .item-collection-wrap .item-img-home.w-maldives {
+        background-image: url("../assets/images/Overwarer-Suite-W-Maldives-cover.jpg");
+      }
+      #body-wrapper main .inner-wrapper footer {
+        margin-top: 5vw;
+      }
+
+      .item-collection-wrap .item-img-home::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        background-color: #082c36;
+        width: 101%;
+        height: 101%;
+        will-change: transform;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform-origin: 0 0%;
+        -webkit-transform-origin: 0 0%;
+        -moz-transform-origin: 0 0%;
+        -ms-transform-origin: 0 0%;
+        transition: transform 1.8s cubic-bezier(0.85, 0.13, 0.17, 0.97) 0.3s;
+      }
+      .collection-banner-block.reverse
+        .item-collection-wrap
+        .item-img-home::after {
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+        -moz-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+      }
+      .item-collection-wrap .item-img-home.reveal::after {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+      }
+      .collection-banner-block.headline_exception h1 {
+        width: 50vw;
+      }
+      .collection-banner-block.headline_exception h1 p {
+        line-height: 85%;
+      }
+      .collection-banner-block.headline_exception [data-animate] > span {
+        line-height: 85%;
+      }
+      .collection-banner-block.headline_exception p.mix-up {
+        /* margin-top: calc(-0.5*1.2vw); */
+        margin-top: calc(0.1vw);
+      }
+      .collection-banner-block.headline_exception
+        .text-block-wrapper
+        p.txt-para-new {
+        /* margin-top:8.5vw; */
+        margin-top: 6.3vw;
+      }
+      .collection-banner-block.headline_exception.ritz-carlton
+        .text-block-wrapper
+        p.txt-para-new {
+        margin-top: 1.75vw;
+      }
+      .collection-banner-block.w-maldives .text-block-wrapper {
+        margin-top: 40px;
+      }
+      .collection-banner-block.w-maldives .empty-block {
+        height: 7vw;
+      }
+      .collection-banner-block.w-maldives .text-block-wrapper p.txt-para-new {
+        margin-top: 4vw;
+        margin-bottom: 5vw;
+      }
+
+      @media screen and (max-width: 768px) {
+        .collection-banner-block.headline_exception h1.nikki-beach {
+          width: 80vw;
+        }
+        .collection-banner-block.headline_exception h1 p {
+          line-height: 97%;
+        }
+        .collection-banner-block.headline_exception [data-animate] > span {
+          line-height: 98%;
+        }
+        .collection-banner-block.headline_exception
+          .text-block-wrapper
+          p.txt-para-new {
+          padding-right: 0;
+        }
+        .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
+          text-align: left;
+        }
+        .item-collection-wrap .item-collection {
+          padding: 9.51vw 7.1vw;
+          width: 100%;
+        }
+        .collection-banner-block.reverse .text-block-wrapper {
+          width: 100%;
+          padding-left: 0;
+        }
+        .collection-banner-block .text-block-wrapper .empty-block {
+          display: none;
+        }
+
+        /*.item-collection-wrap .item-img-home{
+			    width: 45.998vw;
+			    height: 55.69vw;
+ 				background-image: url('../assets/images/collection-banner-mobile.jpg');
+ 			}*/
+        .collection-banner-block #empty-block {
+          width: 40.5vw;
+        }
+        .collection-banner-block .text-block-wrapper p.txt-para-new {
+          font-size: 4.2vw;
+        }
+        .collection-banner-block.reverse .text-block-wrapper h1 p,
+        #collection-block .collection-banner-block.reverse span {
+          text-align: left;
+        }
+        #collection-block .collection-banner-block.reverse span::before {
+          left: 0;
+          right: unset;
+        }
+        .collection-banner-block .text-block-wrapper {
+          width: 100%;
+        }
+        .text-block-wrapper span.collection-link {
+          font-size: 3.2vw;
+          margin-top: 5.5vw;
+        }
+        .collection-banner-block h1,
+        .collection-banner-block h1 p.italic {
+          font-size: 13.4vw;
+          position: relative;
+          width: 100%;
+        }
+        .collection-banner-block.reverse h1 {
+          right: unset;
+          left: 0;
+        }
+        .collection-banner-block.headline_exception h1 {
+          width: 100%;
+        }
+        #collection-block {
+          margin-top: 4.2vw;
+        }
+        #collection-block .collection-banner-block {
+          flex-direction: column-reverse;
+        }
+        #collection-block .collection-banner-block.reverse {
+          flex-direction: column-reverse;
+        }
+        .item-collection-wrap .item-img-home {
+          width: 100%;
+          background-position: bottom -30px right;
+        }
+        .collection-link::before {
+          width: 79vw;
+        }
+        .collection-banner-block.active .text-block-wrapper p[data-animate] {
+          opacity: 1;
+          transform: translate3d(0, 0%, 0);
+          -webkit-transform: translate3d(0, 0%, 0);
+          -moz-transform: translate3d(0, 0%, 0);
+          -ms-transform: translate3d(0, 0%, 0);
+        }
+        .collection-banner-block .text-block-wrapper p.txt-para-new a {
+          font-size: 3.4vw;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/style.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/style.css"
+    /></noscript>
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <main id="main-container" class="loading">
+        <div class="inner-wrapper" data-scroll>
+          <header>
+            <span class="hide-from-desktop">
+              <svg
+                width="24"
+                height="18"
+                viewBox="0 0 24 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="1" x2="24" y2="1" stroke="white" stroke-width="2" />
+                <line y1="9" x2="24" y2="9" stroke="white" stroke-width="2" />
+                <line y1="17" x2="24" y2="17" stroke="white" stroke-width="2" />
+              </svg>
+            </span>
+            <nav>
+              <div id="timer-block">
+                <ul id="timeholder">
+                  <li class="zone activezone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                  <li class="zone"></li>
+                </ul>
+              </div>
+              <a href="../" id="logo-block">
+                <img
+                  src="../assets/images/shomont-logo.png"
+                  alt="Shomont logo"
+                />
+              </a>
+              <ul id="navblock">
+                <li id="close-menu" class="hide-from-desktop">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    fill="#BA877B"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 357 357"
+                    style="enable-background: new 0 0 357 357"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g id="close">
+                        <polygon
+                          points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3
+                                            214.2,178.5         "
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </li>
+                <li class="hide-from-desktop home"><a href="../">Home</a></li>
+
+                <li><a href="../about" class="about">about us</a></li>
+                <li><a href="../services" class="services">our services</a></li>
+                <li>
+                  <a href="../collections" class="collections"
+                    >our collection</a
+                  >
+                </li>
+                <li><a href="../contact" class="contact">contact us</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <section id="collection-block">
+            <div class="collection-banner-block  w-maldives">
+              <div class="text-block-wrapper">
+                <div class="empty-block"></div>
+                <h1>
+                  <p data-animate>W Maldives</p>
+                </h1>
+                <p class="txt-para-new">
+                  W Maldives, where turquoise water and pristine sand come infused with W Maldives' signature style, luxury and personality.Whether you prefer to jump in the ocean from the...
+                </p>
+                <span class="collection-link bottom-line">
+                  <a href="./w-maldives/">discover more</a>
+                </span>
+              </div>
+              <a
+                href="./w-maldives/"
+                class="item-collection-wrap background-wrapper"
+              >
+                <div class="item-collection item-home">
+                  <div class="item-img-home w-maldives"></div>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="collection-banner-block headline_exception ritz-carlton reverse"
+            >
+              <div class="text-block-wrapper">
+                <div class="empty-block"></div>
+                <h1>
+                  <p data-animate>The Ritz-Carlton</p>
+                  <p data-animate class="italic mix-up">Tenerife, Abama</p>
+                </h1>
+                <p class="txt-para-new text-right">
+                  A timeless island retreat of natural beauty and endless
+                  possibilities, The Ritz-Carlton, Tenerife, Abama is designed to harness Tenerife's unique climate, offering a holistic experience for
+                  guests of all ages ...
+                </p>
+                <span class="collection-link bottom-line">
+                  <a href="./the-ritz-carlton/">discover more</a>
+                </span>
+              </div>
+              <a
+                href="./the-ritz-carlton/"
+                class="item-collection-wrap background-wrapper"
+              >
+                <div class="item-collection item-home">
+                  <div class="item-img-home ritz-carlton"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="collection-banner-block headline_exception">
+              <div class="text-block-wrapper">
+                <div class="empty-block"></div>
+                <h1 class="nikki-beach">
+                  <p data-animate>Nikki Beach Resort & Spa</p>
+                  <p data-animate class="mix-up italic">Dubai</p>
+                </h1>
+                <p class="txt-para-new">
+                  The Dubai outpost of the legendary Miami Beach Club, a mix of
+                  117 Rooms and Suites as well as 15 Private Villas located on
+                  Pearl Jumeira, perfectly...
+                </p>
+                <span class="collection-link bottom-line">
+                  <a href="./nikki-beach-resort-and-spa/">discover more</a>
+                </span>
+              </div>
+              <a
+                href="./nikki-beach-resort-and-spa/"
+                class="item-collection-wrap background-wrapper"
+              >
+                <div class="item-collection item-home">
+                  <div class="item-img-home dubai"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="collection-banner-block reverse">
+              <div class="text-block-wrapper">
+                <div class="empty-block"></div>
+                <h1>
+                  <p data-animate>The Villa</p>
+                  <p data-animate class="italic mix-up">Thailand</p>
+                </h1>
+                <p class="txt-para-new text-right">
+                  THE Villa is one of the most luxurious private destinations in
+                  Asia, it is the perfect super-luxury destination for families,
+                  groups of friends or exclusive corporate gatherings and offers
+                  complete privacy and...
+                </p>
+                <span class="collection-link bottom-line">
+                  <a href="./villa-thailand">discover more</a>
+                </span>
+              </div>
+              <a
+                href="./villa-thailand"
+                class="item-collection-wrap background-wrapper"
+              >
+                <div class="item-collection item-home">
+                  <div class="item-img-home"></div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <footer>
+            <ul>
+              <li>
+                <a href="../">
+                  <img
+                    src="../assets/images/shomont-footer-logo.png"
+                    alt="Shomont logo"
+                  />
+                </a>
+              </li>
+
+              <li><a href="../about" class="about menu">about us</a></li>
+              <li>
+                <a href="../services" class="services menu">our services</a>
+              </li>
+              <li>
+                <a href="../collections" class="collections menu"
+                  >our collection</a
+                >
+              </li>
+              <li><a href="../contact" class="contact menu">contact us</a></li>
+            </ul>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+    <script
+      type="text/javascript"
+      src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"
+    ></script>
+    <script type="text/javascript" src="../assets/js/timer-control.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var childLen = $("#timeholder").children("li").length;
+        setInterval(timeZoneIterate, 3000);
+        var c = 0;
+        function timeZoneIterate() {
+          if (c == childLen) {
+            $(".zone").removeClass("activezone");
+            $(".zone:nth-child(1)").addClass("activezone");
+            c = 0;
+          } else {
+            $(".zone").removeClass("activezone");
+            $("#timeholder")
+              .children(".zone:nth-child(" + (c + 1) + ")")
+              .addClass("activezone");
+          }
+          c++;
+        }
+      });
+    </script>
+    <script type="text/javascript" src="../assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript">
+      var collectionReveal = document.querySelectorAll(
+        ".collection-banner-block"
+      );
+      var imgConfig = {
+        root: null,
+        threshold: 0.1,
+        rootMargin: "0px",
+      };
+
+      var observerCollection = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        });
+      },
+      imgConfig);
+
+      Array.prototype.slice.call(collectionReveal).forEach(function (el) {
+        observerCollection.observe(el);
+      });
+    </script>
+  </body>
+</html>
