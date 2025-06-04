@@ -6,7 +6,7 @@ header nav ul#navblock{
 header nav ul#navblock li{
     margin-left: 0px;
 }
-header nav{ 
+header nav{
     display: block;
 }
 header nav #timer-block ul#timeholder{
@@ -16,7 +16,7 @@ header nav a#logo-block {
     display: block;
     position: relative;
     left: 0;
-    left: max(0, 0); 
+    left: max(0, 0);
     transition:none !important;
 }
 header nav ul#navblock li a#logo-block:hover {
@@ -24,9 +24,58 @@ header nav ul#navblock li a#logo-block:hover {
     transition: none !important;
 }
 
+.world-clock {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    overflow: hidden;
+    width: 160px;
+}
+
+.clock-time {
+    opacity: 0;
+    font-family: "freight-display-pro", sans-serif;
+    transition:all 0.7s;
+					-webkit-transition:all 0.7s;
+					-moz-transition:all 0.7s;
+					-ms-transition:all 0.7s;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.252vw;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.clock-time.show {
+    opacity: 1;
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .hide-on-mobile {
         display: none !important;
+    }
+    header nav #timer-block ul#timeholder {
+        width: 200px;
+    }
+    .world-clock {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .clock-time {
+        font-size: 3.621vw;
+    }
+    header nav ul#navblock{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    header nav ul#navblock li a {
+        margin-top: 20px;
+        line-height: 60px;
     }
 }

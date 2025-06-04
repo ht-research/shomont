@@ -329,7 +329,7 @@
 	}
 	.txt-para#subtxt::first-letter{
 		font-size:6.12vw;
-	} 
+	}
 	.txt-para.reappear {
 	    opacity: 1;
 	    transform: translateY(0px);
@@ -403,7 +403,7 @@
 
 	@media screen and (max-width:768px){
 		#overview-block .overview-wrapper,
-		#image-collection-block .collection-wrapper, 
+		#image-collection-block .collection-wrapper,
 		#image-collection-block-next .collection-wrapper,
 		#image-text-block-next .collection-wrapper{
 			flex-direction: column;
@@ -505,7 +505,7 @@
 			margin-top: calc(7vw + 20px);
 		}
 	}
- 	
+
     </style>
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="../../assets/css/style.css"></noscript>
@@ -523,80 +523,41 @@
 						</svg>
 					</span>
 					<nav>
-              
+						<div class="hide-from-desktop">
+							<a href="../../" id="logo-block" style="text-align: center;">
+							  <img src="../../assets/images/shomont-logo.png" alt="Shomont logo">
+							  </a>
+							  <div class="world-clock">
+							  <div class="clock-time"></div>
+							  </div>
+						  </div>
 						<ul id="navblock">
 						  <li id="close-menu" class="hide-from-desktop">
 							<svg
-							  version="1.1"
-							  id="Capa_1"
-							  fill="#BA877B"
-							  xmlns="http://www.w3.org/2000/svg"
-							  xmlns:xlink="http://www.w3.org/1999/xlink"
-							  x="0px"
-							  y="0px"
-							  width="24px"
-							  height="24px"
-							  viewBox="0 0 357 357"
-							  style="enable-background: new 0 0 357 357"
-							  xml:space="preserve"
-							>
-							  <g>
-								<g id="close">
-								  <polygon
-									points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3
-													  214.2,178.5         "
-								  />
-								</g>
-							  </g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							</svg>
+                    version="1.1"
+                    id="Capa_1"
+                    fill="#BA877B"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 357 357"
+                    style="enable-background: new 0 0 357 357"
+                    xml:space="preserve"
+                  >
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
+                  </svg>
 						  </li>
 						  <li class="hide-from-desktop home">
 							<a href="../../">Home</a>
 						  </li>
-						<li class="hide-on-mobile">
-						  <div id="timer-block">
-						  <ul id="timeholder">
-							<li class="zone activezone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-						  </ul>
-						</div>
-						</li>
+						  <li class="clock hide-on-mobile">
+							<div class="world-clock">
+							  <div class="clock-time"></div>
+							  </div>
+							</li>
 						  <li><a href="../../about" class="about">about us</a></li>
 						  <li>
 							<a href="../../services" class="services">our services</a>
@@ -630,10 +591,10 @@
 					</div>
 					<div class="banner-wrap-text">
 						<h2>
-							<span>The Villa</span> 
+							<span>The Villa</span>
 							<span class="italic">Thailand</span>
 						</h2>
-					</div>	
+					</div>
 				</section>
 
 				<section id="overview-block">
@@ -660,7 +621,7 @@
 								<div class="item-overview item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -673,7 +634,7 @@
 								<div class="item-view-left item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="img-with-txt">
@@ -681,7 +642,7 @@
 								<div class="item-view-right item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -689,7 +650,7 @@
 
 				<section class="middle-txt-block">
 					<p id="subtxt" class="txt-para">
-							The story of the THE Villa began in the 1980s when a young Swedish entrepreneur started travelling to Taiwan to set up his own manufacturing business. During a flight back home to Stockholm via Bangkok, he found himself in Business Class and struck up a conversation with another passenger, who told him of his plans to build a luxury villa in a secluded region of Thailand. The Swedish businessman was invited to check out the area and was startled by its natural beauty – and by its potential. When he saw a large plot of land for sale – one with an amazing view of the ocean and access to several spectacular beaches – he jumped at the opportunity. With 25 years of experience building factories in Taiwan, he was able to start construction of an unparalleled luxury resort, one that mixes exclusivity, natural beauty and a rare level of environmental consciousness. 
+							The story of the THE Villa began in the 1980s when a young Swedish entrepreneur started travelling to Taiwan to set up his own manufacturing business. During a flight back home to Stockholm via Bangkok, he found himself in Business Class and struck up a conversation with another passenger, who told him of his plans to build a luxury villa in a secluded region of Thailand. The Swedish businessman was invited to check out the area and was startled by its natural beauty – and by its potential. When he saw a large plot of land for sale – one with an amazing view of the ocean and access to several spectacular beaches – he jumped at the opportunity. With 25 years of experience building factories in Taiwan, he was able to start construction of an unparalleled luxury resort, one that mixes exclusivity, natural beauty and a rare level of environmental consciousness.
 					</p>
 				</section>
 
@@ -700,7 +661,7 @@
 								<div class="item-view-left-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="img-with-txt">
@@ -708,7 +669,7 @@
 								<div class="item-view-right-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -732,13 +693,13 @@
 								<div class="item-image-right-text item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</section>
 
-				
+
 
 				<section class="contact-us-section">
 					<div class="background-wrapper item-contact-home">
@@ -746,9 +707,9 @@
 							<div class="item-img-home"></div>
 						</div>
 					</div>
-					<<!-- img src="assets/images/home-contact-banner.jpg" alt="contact illustration" /> -->
+					<!-- img src="assets/images/home-contact-banner.jpg" alt="contact illustration" /> -->
 					<div id="txt-wrapper">
-					
+
 						<h2 class="flying-txt">Interested in this property? Do you want to know more?
 							<span>Let’s connect</span>
 						</h2>
@@ -757,7 +718,7 @@
 				</section>
 
 				<section class="back-to-collection">
-					<a href="../" class="collection-link-wrap">	
+					<a href="../" class="collection-link-wrap">
 						<div id="left-arrow">
 							<img src="../../assets/images/white-left-chev.svg">
 						</div>
@@ -771,14 +732,17 @@
 					<ul>
 						<li>
 							<a href="../../">
-								<img src="../../assets/images/shomont-footer-logo.png" alt="Shomont logo">
+								<img
+									src="../../assets/images/shomont-footer-logo.png"
+									alt="Shomont logo"
+								/>
 							</a>
 						</li>
-						<li><a href="../collections" class="collections menu">our collection</a></li>
-						<li><a href="../previous-partners" class="collections menu">previous partners</a></li>
-						<li><a href="../about" class="about menu">about us</a></li>
-						<li><a href="../services" class="services menu">our services</a></li>
-						<li><a href="../contact" class="contact menu">contact us</a></li>
+						<li><a href="../../collections" class="collections menu">our collection</a></li>
+						<li><a href="../../previous-partners" class="previous-partners menu">previous partners</a></li>
+						<li><a href="../../about" class="about menu">about us</a></li>
+						<li><a href="../../services" class="services menu">our services</a></li>
+						<li><a href="../../contact" class="contact menu">contact us</a></li>
 					</ul>
 				</footer>
 
@@ -798,7 +762,7 @@
 		setInterval(timeZoneIterate,3000);
 		var c = 0;
 		function timeZoneIterate(){
-			
+
 			if(c == childLen){
 				$('.zone').removeClass('activezone');
 				$('.zone:nth-child(1)').addClass('activezone');
@@ -810,10 +774,10 @@
 			}
 			c++;
 		}
-		
+
 
 	});
-	
+
 </script>
 <script type="text/javascript" src="../../assets/js/smooth-scroll.js"></script>
 <script type="text/javascript">
@@ -853,8 +817,8 @@
 			$('.overview-wrapper .content-box h3').addClass('reappear');
 		}
 	})
-	
-	
+
+
 </script>
 </body>
 </html>

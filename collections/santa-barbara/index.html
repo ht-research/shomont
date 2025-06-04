@@ -161,7 +161,7 @@
 	.facilities .overview-wrapper .content-box ul li:last-child{
 		margin-bottom:0;
 	}
-	
+
 	.facilities .overview-wrapper .content-box .txt-para{
 		width:100%;
 		margin-bottom:0;
@@ -457,7 +457,7 @@
 	    -ms-transform: translateY(20px);
 	    transition: all 1s cubic-bezier(.66,.15,.33,.71) 0.2s;
 	}
-	 
+
 	.txt-para.reappear {
 	    opacity: 1;
 	    transform: translateY(0px);
@@ -551,7 +551,7 @@
 			width:100%;
 		}
 		#overview-block .overview-wrapper,
-		#image-collection-block .collection-wrapper, 
+		#image-collection-block .collection-wrapper,
 		#image-collection-block-next .collection-wrapper,
 		#image-text-block-next .collection-wrapper,
 		.facilities .overview-wrapper,
@@ -711,7 +711,7 @@
 			margin-top: calc(7vw + 20px);
 		}
 	}
- 	
+
     </style>
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="../../assets/css/style.css"></noscript>
@@ -721,65 +721,77 @@
 		<main id="main-container" class="loading">
 			<div class="inner-wrapper" data-scroll>
 				<header>
-					<span class="hide-from-desktop">
-						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<line y1="1" x2="24" y2="1" stroke="white" stroke-width="2"/>
-							<line y1="9" x2="24" y2="9" stroke="white" stroke-width="2"/>
-							<line y1="17" x2="24" y2="17" stroke="white" stroke-width="2"/>
-						</svg>
-					</span>
-					<nav>
-						<div id="timer-block">
-							<ul id="timeholder">
-								<li class="zone activezone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>
-								<li class="zone"></li>	
-							</ul>
-						</div>
-						<a href="../../" id="logo-block">
-							<img src="../../assets/images/shomont-logo.png" alt="Shomont logo" />
-						</a>
-						<ul id="navblock">
-							<li id="close-menu" class="hide-from-desktop">
-								<svg version="1.1" id="Capa_1" fill="#BA877B" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     width="24px" height="24px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
-                                <g>
-                                    <g id="close">
-                                        <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
-                                            214.2,178.5         "/>
-                                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
-                                </g>
-                                </svg>
-							</li>
-							<li class="hide-from-desktop home"><a href="../../">Home</a></li>
-							
-							<li><a href="../../about" class="about">about us</a></li>
-							<li><a href="../../services" class="services">our services</a></li>
-							<li><a href="../../collections" class="collections">our collection</a></li>
-							<li><a href="../../contact" class="contact">contact us</a></li>
-						</ul>
-					</nav>
-				</header>
+            <span class="hide-from-desktop">
+              <svg
+                width="24"
+                height="18"
+                viewBox="0 0 24 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="1" x2="24" y2="1" stroke="white" stroke-width="2" />
+                <line y1="9" x2="24" y2="9" stroke="white" stroke-width="2" />
+                <line y1="17" x2="24" y2="17" stroke="white" stroke-width="2" />
+              </svg>
+            </span>
+            <nav>
+              <div class="hide-from-desktop">
+                <a href="../../" id="logo-block" style="text-align: center;">
+                  <img src="../../assets/images/shomont-logo.png" alt="Shomont logo">
+                  </a>
+                  <div class="world-clock">
+                  <div class="clock-time"></div>
+                  </div>
+              </div>
+              <ul id="navblock">
+                <li id="close-menu" class="hide-from-desktop">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    fill="#BA877B"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 357 357"
+                    style="enable-background: new 0 0 357 357"
+                    xml:space="preserve"
+                  >
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
+                  </svg>
+                </li>
+                <li class="hide-from-desktop home">
+                  <a href="../../">Home</a>
+                </li>
+                <li class="clock hide-on-mobile">
+                  <div class="world-clock">
+                    <div class="clock-time"></div>
+                    </div>
+                  </li>
+                <li><a href="../../about" class="about">about us</a></li>
+                <li>
+                  <a href="../../services" class="services">our services</a>
+                </li>
+              <li class="hide-on-mobile">
+              <a href="../../" id="logo-block">
+                <img
+                  src="../../assets/images/shomont-logo.png"
+                  alt="Shomont logo"
+                />
+              </a>
+              </li>
+                <li>
+                  <a href="../../collections" class="collections"
+                    >our collection</a
+                  >
+                </li>
+                <li><a href="../../previous-partners" class="previous-partners">previous partners</a></li>
+                <li><a href="../../contact" class="contact">contact us</a></li>
+              </ul>
+            </nav>
+          </header>
 
 
 				<section class="banner-block">
@@ -792,10 +804,10 @@
 					<div class="banner-wrap-text">
 						<h2>
 							<p><small>by</small> SINGULAR PROPERTIES</p>
-							<span>Santa Barbara </span> 
+							<span>Santa Barbara </span>
 							<span class="italic">Eco Beach Resort Azores</span>
 						</h2>
-					</div>	
+					</div>
 				</section>
 
 				<section id="overview-block">
@@ -814,7 +826,7 @@
 								<div class="item-overview item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -827,7 +839,7 @@
 								<div class="item-view-left item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="img-with-txt">
@@ -835,7 +847,7 @@
 								<div class="item-view-right item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -856,7 +868,7 @@
 									The emphasis throughout the construction was placed on using natural materials, with the main focus on local wood (cryptomeria), cork and bamboo, in addition to decorative elements relating to Azorean traditions. Both the walls and floor of the villas, studios and main building were made using micro-cement.
 								</li>
 								<li>
-									In the exterior areas of the resort the respect for nature also stands out. 
+									In the exterior areas of the resort the respect for nature also stands out.
 An enormous saltwater pool, with stone beds inside and a view of the ocean, promises to delight those seeking moments of contemplation, while a wooden deck built on top of the cliff allows guests to enjoy a massage to the sound of the sea, and the sport activity centre is a stimulus to anyone looking for some adventure, with access to the surf school and hire of equipment for snorkelling, stand-up paddle, surfing and kayaking. All of the resort’s gardens are regularly supplemented with new indigenous plant species in the aim of offering a more exclusive atmosphere without interfering with the magnificent natural landscape that characterises the hotel. A particular highlight is the shared garden at the Garden Villas, where a selection of over a hundred indigenous tree species were planted in beds surrounded by walls made of local volcanic rock.
 								</li>
 							</ul>
@@ -867,7 +879,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-overview item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -880,7 +892,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-view-left-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="img-with-txt">
@@ -888,7 +900,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-view-right-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -914,7 +926,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-image-right-text item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -927,7 +939,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-view-left-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="img-with-txt">
@@ -935,7 +947,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 								<div class="item-view-right-lower item-home">
 									<div class="item-img-home"></div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -944,7 +956,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 				<section class="overview-text-only extra-margin">
 					<h3 class="hide">Wellness Retreat</h3>
 					<p class="txt-para">
-						One of the other big new features at Santa Barbara Eco-Beach Resort is the Wellness Retreat. Housed in a facility at the resort’s highest point, it has a wonderful view over the 3.3 hectares of this seafront property and offers a huge range of services, namely signature rituals such as the Salt Detox, a relaxing massage with exfoliation, alternative treatments like the Bamboo Detox, and even yoga classes and SUP yoga. 
+						One of the other big new features at Santa Barbara Eco-Beach Resort is the Wellness Retreat. Housed in a facility at the resort’s highest point, it has a wonderful view over the 3.3 hectares of this seafront property and offers a huge range of services, namely signature rituals such as the Salt Detox, a relaxing massage with exfoliation, alternative treatments like the Bamboo Detox, and even yoga classes and SUP yoga.
 					</p>
 				</section>
 
@@ -959,7 +971,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 				<section class="auth-flavor">
 					<h4>
 				Authenticity Sustainability Exclusivity <span class="italic">And</span>
-				Excellence 
+				Excellence
 					</h4>
 				</section>
 
@@ -971,7 +983,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 					</div>
 					<<!-- img src="assets/images/home-contact-banner.jpg" alt="contact illustration" /> -->
 					<div id="txt-wrapper">
-					
+
 						<h2 class="flying-txt">Interested in this property? Do you want to know more?
 							<span>Let’s connect</span>
 						</h2>
@@ -980,7 +992,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 				</section>
 
 				<section class="back-to-collection">
-					<a href="../" class="collection-link-wrap">	
+					<a href="../" class="collection-link-wrap">
 						<div id="left-arrow">
 							<img src="../../assets/images/white-left-chev.svg">
 						</div>
@@ -991,20 +1003,22 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 				</section>
 
 				<footer>
-					<ul>
-						<li>
-							<a href="../../">
-								<img src="../../assets/images/shomont-footer-logo.png" alt="Shomont logo">
-							</a>
-						</li>
-						
-						<li><a href="../collections" class="collections menu">our collection</a></li>
-						<li><a href="../previous-partners" class="collections menu">previous partners</a></li>
-						<li><a href="../about" class="about menu">about us</a></li>
-						<li><a href="../services" class="services menu">our services</a></li>
-						<li><a href="../contact" class="contact menu">contact us</a></li>
-					</ul>
-				</footer>
+            <ul>
+              <li>
+                <a href="../../">
+                  <img
+                    src="../../assets/images/shomont-footer-logo.png"
+                    alt="Shomont logo"
+                  />
+                </a>
+              </li>
+              <li><a href="../../collections" class="collections menu">our collection</a></li>
+              <li><a href="../../previous-partners" class="previous-partners menu">previous partners</a></li>
+              <li><a href="../../about" class="about menu">about us</a></li>
+              <li><a href="../../services" class="services menu">our services</a></li>
+              <li><a href="../../contact" class="contact menu">contact us</a></li>
+            </ul>
+          </footer>
 
 			</div>
 		</main>
@@ -1022,7 +1036,7 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 		setInterval(timeZoneIterate,3000);
 		var c = 0;
 		function timeZoneIterate(){
-			
+
 			if(c == childLen){
 				$('.zone').removeClass('activezone');
 				$('.zone:nth-child(1)').addClass('activezone');
@@ -1034,10 +1048,10 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 			}
 			c++;
 		}
-		
+
 
 	});
-	
+
 </script>
 <script type="text/javascript" src="../../assets/js/smooth-scroll.js"></script>
 <script type="text/javascript">
@@ -1091,8 +1105,8 @@ An enormous saltwater pool, with stone beds inside and a view of the ocean, prom
 	$(window).on('load',function(){
 		$('.banner-wrap-text h2 span').addClass('reappear');
 	})
-	
-	
+
+
 </script>
 </body>
 </html>

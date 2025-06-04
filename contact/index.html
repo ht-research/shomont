@@ -149,7 +149,7 @@
 			display:-ms-flex;
 			justify-content: flex-start;
 			align-items: center;
-			
+
 		}
 		.left-contact-block .contact-info-block.mobile-info{
 			margin-top:2.8vw;
@@ -322,7 +322,7 @@
 				width:4.2vw;
 				height:auto;
 			}
-			
+
 		}
 
 
@@ -343,80 +343,41 @@
 						</svg>
 					</span>
 					<nav>
-              
+						<div class="hide-from-desktop">
+							<a href="./" id="logo-block" style="text-align: center;">
+								<img src="../assets/images/shomont-logo.png" alt="Shomont logo">
+							  </a>
+							  <div class="world-clock">
+								<div class="clock-time"></div>
+							  </div>
+						</div>
 						<ul id="navblock">
 						  <li id="close-menu" class="hide-from-desktop">
 							<svg
-							  version="1.1"
-							  id="Capa_1"
-							  fill="#BA877B"
-							  xmlns="http://www.w3.org/2000/svg"
-							  xmlns:xlink="http://www.w3.org/1999/xlink"
-							  x="0px"
-							  y="0px"
-							  width="24px"
-							  height="24px"
-							  viewBox="0 0 357 357"
-							  style="enable-background: new 0 0 357 357"
-							  xml:space="preserve"
+								version="1.1"
+								id="Capa_1"
+								fill="#BA877B"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								width="24px"
+								height="24px"
+								viewBox="0 0 357 357"
+								style="enable-background: new 0 0 357 357"
+								xml:space="preserve"
 							>
-							  <g>
-								<g id="close">
-								  <polygon
-									points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3
-													  214.2,178.5         "
-								  />
-								</g>
-							  </g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
-							  <g></g>
+								<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
 							</svg>
 						  </li>
 						  <li class="hide-from-desktop home">
 							<a href="../">Home</a>
 						  </li>
-						<li class="hide-on-mobile">
-						  <div id="timer-block">
-						  <ul id="timeholder">
-							<li class="zone activezone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-							<li class="zone"></li>
-						  </ul>
-						</div>
-						</li>
+						  <li class="clock hide-on-mobile">
+							<div class="world-clock">
+								<div class="clock-time"></div>
+							  </div>
+							</li>
 						  <li><a href="../about" class="about">about us</a></li>
 						  <li>
 							<a href="../services" class="services">our services</a>
@@ -434,7 +395,7 @@
 							  >our collection</a
 							>
 						  </li>
-						  <li><a href="../previous-partners" class="about">previous partners</a></li>
+						  <li><a href="../previous-partners" class="previous-partners">previous partners</a></li>
 						  <li><a href="../contact" class="contact">contact us</a></li>
 						</ul>
 					  </nav>
@@ -450,7 +411,7 @@
 							</h1>
 							<p id="subtxt"  class="txt-para delay-para">
 								<span>
-									Please reach out if you would like to talk about representation for your property or to find out more about our collection, 
+									Please reach out if you would like to talk about representation for your property or to find out more about our collection,
 								</span>
 								<span>I am always happy to talk travel.</span>
 							</p>
@@ -494,10 +455,10 @@
 								<img src="../assets/images/shomont-footer-logo.png" alt="Shomont logo">
 							</a>
 						</li>
-						
+						<li><a href="../collections" class="collections menu">our collection</a></li>
+						<li><a href="../previous-partners" class="previous-partners menu">previous partners</a></li>
 						<li><a href="../about" class="about menu">about us</a></li>
 						<li><a href="../services" class="services menu">our services</a></li>
-						<li><a href="../collections" class="collections menu">our collection</a></li>
 						<li><a href="../contact" class="contact menu">contact us</a></li>
 					</ul>
 				</footer>
@@ -518,7 +479,7 @@
 		setInterval(timeZoneIterate,3000);
 		var c = 0;
 		function timeZoneIterate(){
-			
+
 			if(c == childLen){
 				$('.zone').removeClass('activezone');
 				$('.zone:nth-child(1)').addClass('activezone');
@@ -530,10 +491,10 @@
 			}
 			c++;
 		}
-		
+
 
 	});
-	
+
 </script>
 <script type="text/javascript" src="../assets/js/smooth-scroll.js"></script>
 
