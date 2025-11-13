@@ -57,20 +57,22 @@
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: stretch;
         margin-bottom: 11vw;
       }
-      #collection-block .collection-banner-block.reverse {
+      #collection-block .collection-banner-block:nth-child(even) {
         flex-direction: row-reverse;
       }
-      #collection-block .collection-banner-block.reverse .txt-para {
+      #collection-block .collection-banner-block:nth-child(even) .txt-para-new,
+      #collection-block .collection-banner-block:nth-child(even) .txt-para {
+        text-align: right;
+        padding-right: 0;
+      }
+      #collection-block .collection-banner-block:nth-child(even) span {
         text-align: right;
       }
-      #collection-block .collection-banner-block.reverse span {
-        text-align: right;
-      }
-      #collection-block .collection-banner-block.reverse span::before {
+      #collection-block .collection-banner-block:nth-child(even) span::before{
         left: unset;
         right: 0;
         transform-origin: 100% 0;
@@ -104,7 +106,7 @@
         -moz-transform: translate3d(0, 0, 0px);
         -ms-transform: translate3d(0, 0, 0px);
       }
-      .collection-banner-block.reverse .text-block-wrapper h3 {
+      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h3 {
         text-align: right;
       }
       .collection-banner-block .text-block-wrapper h3 span {
@@ -115,21 +117,22 @@
         display: inline-block;
         margin-right: 0.8vw;
       }
-      .collection-banner-block .text-block-wrapper .empty-block {
-        width: 32.5vw;
-        width: 100%;
-        height: 13vw;
-        /*height:10vw;*/
-      }
       .collection-banner-block .text-block-wrapper {
         width: 45vw;
         position: relative;
         /*white-space: nowrap; */
+        margin-top: 0;
+        padding-right: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 4vw;
       }
-      .collection-banner-block.reverse .text-block-wrapper {
+      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
         padding-left: 3vw;
+        padding-right: 0;
       }
-      .collection-banner-block.reverse .text-block-wrapper h1 p {
+      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h1 p {
         text-align: right;
       }
       .collection-banner-block .text-block-wrapper p.txt-para-new {
@@ -141,7 +144,6 @@
         padding: 0 0 0 0;
         margin-top: 1.5vw;
         opacity: 0;
-        padding-right: 24px;
         transform: translateY(20px);
         -webkit-transform: translateY(20px);
         -moz-transform: translateY(20px);
@@ -150,7 +152,6 @@
       }
       .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
         text-align: right;
-        padding-right: 0;
       }
       .collection-banner-block .text-block-wrapper p.txt-para-new a {
         color: #fff;
@@ -266,11 +267,11 @@
         font-style: normal;
         font-weight: 300;
         font-size: 7.292vw;
-        line-height: 85%;
+        line-height: 90%;
         letter-spacing: -0.015em;
         color: #ffffff;
         z-index: 3;
-        top: 0;
+        top: 1vw;
         left: 0;
         overflow: visible;
         width: 61vw;
@@ -279,7 +280,7 @@
       .collection-banner-block h1.tag-property {
         top: 2.5vw;
       }
-      .collection-banner-block.reverse h1 {
+      #collection-block .collection-banner-block:nth-child(even) h1 {
         left: unset;
         right: 0;
       }
@@ -342,6 +343,9 @@
       .item-collection-wrap .item-img-home.w-maldives {
         background-image: url("../assets/images/Overwarer-Suite-W-Maldives-cover.jpg");
       }
+      .item-collection-wrap .item-img-home.vommuli-island {
+        background-image: url("../assets/images/vommuli-island-collection.jpg");
+      }
       #body-wrapper main .inner-wrapper footer {
         margin-top: 5vw;
       }
@@ -365,9 +369,7 @@
         -ms-transform-origin: 0 0%;
         transition: transform 1.8s cubic-bezier(0.85, 0.13, 0.17, 0.97) 0.3s;
       }
-      .collection-banner-block.reverse
-        .item-collection-wrap
-        .item-img-home::after {
+      #collection-block .collection-banner-block:nth-child(even) .item-collection-wrap .item-img-home::after {
         transform-origin: 100% 0%;
         -webkit-transform-origin: 100% 0%;
         -moz-transform-origin: 100% 0%;
@@ -392,27 +394,6 @@
         /* margin-top: calc(-0.5*1.2vw); */
         margin-top: calc(0.1vw);
       }
-      .collection-banner-block.headline_exception
-        .text-block-wrapper
-        p.txt-para-new {
-        /* margin-top:8.5vw; */
-        margin-top: 6.3vw;
-      }
-      .collection-banner-block.headline_exception.ritz-carlton
-        .text-block-wrapper
-        p.txt-para-new {
-        margin-top: 1.75vw;
-      }
-      .collection-banner-block.w-maldives .text-block-wrapper {
-        margin-top: 40px;
-      }
-      .collection-banner-block.w-maldives .empty-block {
-        height: 7vw;
-      }
-      .collection-banner-block.w-maldives .text-block-wrapper p.txt-para-new {
-        margin-top: 4vw;
-        margin-bottom: 5vw;
-      }
 
       @media screen and (max-width: 768px) {
         .collection-banner-block.headline_exception h1.nikki-beach {
@@ -424,11 +405,13 @@
         .collection-banner-block.headline_exception [data-animate] > span {
           line-height: 98%;
         }
+        #collection-block .collection-banner-block .txt-para-new,
         .collection-banner-block.headline_exception
           .text-block-wrapper
           p.txt-para-new {
           padding-right: 0;
         }
+        #collection-block .collection-banner-block:nth-child(even) .txt-para-new,
         .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
           text-align: left;
         }
@@ -436,35 +419,30 @@
           padding: 9.51vw 7.1vw;
           width: 100%;
         }
-        .collection-banner-block.reverse .text-block-wrapper {
+        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
           width: 100%;
           padding-left: 0;
         }
-        .collection-banner-block .text-block-wrapper .empty-block {
-          display: none;
-        }
-
-        /*.item-collection-wrap .item-img-home{
-			    width: 45.998vw;
-			    height: 55.69vw;
- 				background-image: url('../assets/images/collection-banner-mobile.jpg');
- 			}*/
-        .collection-banner-block #empty-block {
-          width: 40.5vw;
+         #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
+          width: 100%;
+          padding-left: 0;
         }
         .collection-banner-block .text-block-wrapper p.txt-para-new {
           font-size: 4.2vw;
         }
-        .collection-banner-block.reverse .text-block-wrapper h1 p,
-        #collection-block .collection-banner-block.reverse span {
+        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h1 p,
+        #collection-block .collection-banner-block:nth-child(even) span {
           text-align: left;
         }
-        #collection-block .collection-banner-block.reverse span::before {
+        #collection-block .collection-banner-block:nth-child(even) span::before {
           left: 0;
           right: unset;
         }
         .collection-banner-block .text-block-wrapper {
           width: 100%;
+          margin-top: 20px;
+          padding-right: 0;
+          padding-bottom: 0;
         }
         .text-block-wrapper span.collection-link {
           font-size: 3.2vw;
@@ -476,7 +454,7 @@
           position: relative;
           width: 100%;
         }
-        .collection-banner-block.reverse h1 {
+         #collection-block .collection-banner-block:nth-child(even) h1 {
           right: unset;
           left: 0;
         }
@@ -489,7 +467,7 @@
         #collection-block .collection-banner-block {
           flex-direction: column-reverse;
         }
-        #collection-block .collection-banner-block.reverse {
+        #collection-block .collection-banner-block:nth-child(even) {
           flex-direction: column-reverse;
         }
         .item-collection-wrap .item-img-home {
@@ -600,9 +578,35 @@
           </header>
 
           <section id="collection-block">
+            <div class="collection-banner-block vommuli-island">
+              <div class="text-block-wrapper">
+                <h1>
+                  <p data-animate>Vommuli Island</p>
+                </h1>
+                <p class="txt-para-new">
+                  The St. Regis Maldives Vommuli Island, refined yet contemporary design
+                  blends effortlessly with local craftsmanship and an
+                  appreciation for its ecological environment. Impeccably
+                  crafted dishes from all over the world are cooked to
+                  perfection and every possible luxury can be found at
+                  this exquisite Maldives retreat.
+                </p>
+                <span class="collection-link bottom-line">
+                  <a href="./vommuli-island/">discover more</a>
+                </span>
+              </div>
+              <a
+                href="./vommuli-island/"
+                class="item-collection-wrap background-wrapper"
+              >
+                <div class="item-collection item-home">
+                  <div class="item-img-home vommuli-island"></div>
+                </div>
+              </a>
+            </div>
+
             <div class="collection-banner-block  w-maldives">
               <div class="text-block-wrapper">
-                <div class="empty-block"></div>
                 <h1>
                   <p data-animate>W Maldives</p>
                 </h1>
@@ -623,16 +627,13 @@
               </a>
             </div>
 
-            <div
-              class="collection-banner-block headline_exception ritz-carlton reverse"
-            >
+            <div class="collection-banner-block ritz-carlton">
               <div class="text-block-wrapper">
-                <div class="empty-block" style="height: 10vw;"></div>
                 <h1>
                   <p data-animate>Wów Travels</p>
                   <!-- <p data-animate class="italic mix-up">Tenerife, Abama</p> -->
                 </h1>
-                <p class="txt-para-new text-right">
+                <p class="txt-para-new">
                   Introducing wówtravels, a B2B Destination Management Company based in Bali, specializing in creating memorable experiences in Indonesia , Malaysia and Borneo. We exclusively collaborate luxury agencies (Virtuoso and Serandipians), boutique Tour Operators and M.I.C.E. agencies.
                 </p>
                 <span class="collection-link bottom-line">
@@ -649,9 +650,8 @@
               </a>
             </div>
 
-            <div class="collection-banner-block headline_exception">
+            <div class="collection-banner-block">
               <div class="text-block-wrapper">
-                <div class="empty-block" style="height: 5vw;"></div>
                 <h1 class="nikki-beach">
                   <p data-animate>Equilibri Travel</p>
                 </h1>
@@ -672,14 +672,13 @@
               </a>
             </div>
 
-            <div class="collection-banner-block reverse">
+            <div class="collection-banner-block">
               <div class="text-block-wrapper">
-                <div class="empty-block"></div>
                 <h1>
                   <p data-animate>The Villa</p>
                   <p data-animate class="italic mix-up">Thailand</p>
                 </h1>
-                <p class="txt-para-new text-right">
+                <p class="txt-para-new">
                   THE Villa is one of the most luxurious private destinations in Asia, it is the perfect super-luxury destination for families, groups of friends or exclusive corporate gatherings and offers complete privacy and...
                 </p>
                 <span class="collection-link bottom-line">
