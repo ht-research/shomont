@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow" />
     <title>Shomont | Collections</title>
     <link
       rel="stylesheet"
@@ -12,8 +18,7 @@
       href="https://use.typekit.net/bhq0cwo.css"
       crossorigin="anonymous"
       media="none"
-      onload="if(media!='all')media='all'"
-    />
+      onload="if(media!='all')media='all'" />
     <noscript
       ><link
         rel="stylesheet"
@@ -26,25 +31,28 @@
       href="https://use.typekit.net/sgm4bit.css"
       crossorigin="anonymous"
       media="none"
-      onload="if(media!='all')media='all'"
-    />
+      onload="if(media!='all')media='all'" />
     <noscript
       ><link
         rel="stylesheet"
         href="https://use.typekit.net/sgm4bit.css"
         crossorigin="anonymous"
     /></noscript>
-    <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/header.css" />
     <link
       rel="shortcut icon"
       href="../assets/images/Favicon.png"
-      type="image/png"
-    />
+      type="image/png" />
     <meta
       property="og:image"
-      content="../assets/images/shomont-thumbnail.jpg"
-    />
-    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css" />
+      content="../assets/images/shomont-thumbnail.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/custom.css" />
     <style type="text/css">
       #collection-block {
         width: 100%;
@@ -72,7 +80,7 @@
       #collection-block .collection-banner-block:nth-child(even) span {
         text-align: right;
       }
-      #collection-block .collection-banner-block:nth-child(even) span::before{
+      #collection-block .collection-banner-block:nth-child(even) span::before {
         left: unset;
         right: 0;
         transform-origin: 100% 0;
@@ -81,7 +89,7 @@
         -ms-transform-origin: 100% 0;
       }
       .collection-banner-block .text-block-wrapper h3 {
-        font-family: "presicav", sans-serif;
+        font-family: 'presicav', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 0.7vw;
@@ -111,7 +119,7 @@
       }
       .collection-banner-block .text-block-wrapper h3 span {
         font-style: italic;
-        font-family: "freight-display-pro", sans-serif;
+        font-family: 'freight-display-pro', sans-serif;
         letter-spacing: normal;
         font-size: 0.95vw;
         display: inline-block;
@@ -127,10 +135,19 @@
         flex-direction: column;
         justify-content: flex-end;
         padding-bottom: 4vw;
+        align-items: self-start;
+        max-width: 25.5vw;
+      }
+      .text-block-wrapper-details {
+        margin-top: auto;
+      }
+      .text-block-wrapper h1 p {
+        text-align: left;
       }
       #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
         padding-left: 3vw;
         padding-right: 0;
+        align-items: self-end;
       }
       #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h1 p {
         text-align: right;
@@ -139,10 +156,10 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.185vw;
-        line-height: 175%;
+        line-height: 165%;
         color: rgba(255, 255, 255, 0.5);
         padding: 0 0 0 0;
-        margin-top: 1.5vw;
+        margin-top: 2vw;
         opacity: 0;
         transform: translateY(20px);
         -webkit-transform: translateY(20px);
@@ -233,12 +250,12 @@
         -ms-transform: translate3d(0, 0px, 0);
       }
       .text-block-wrapper span.collection-link {
-        font-family: "presicav", sans-serif;
+        font-family: 'presicav', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 1.252vw;
-        line-height: 1.9;
-        margin-top: 2.2vw;
+        line-height: 2;
+        margin-top: 2vw;
         letter-spacing: -0.015em;
         color: #ba877b;
         display: block;
@@ -256,18 +273,18 @@
       }
 
       .collection-banner-block h1 {
-        position: absolute;
+        position: relative;
         /*top:50%;
  			left:0;
  			transform:translateY(-50%);
  			-webkit-transform:translateY(-50%);
  			-moz-transform:translateY(-50%);
  			-ms-transform:translateY(-50%);*/
-        font-family: "freight-display-pro", sans-serif;
+        font-family: 'freight-display-pro', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 7.292vw;
-        line-height: 90%;
+        line-height: 80%;
         letter-spacing: -0.015em;
         color: #ffffff;
         z-index: 3;
@@ -288,8 +305,8 @@
         margin-top: 2vw;
       }
       .collection-banner-block h1 p {
-        line-height: 114%;
-        margin-top: calc(-1 * 1.5vw);
+        line-height: 90%;
+        margin-top: calc(-1 * 1vw);
       }
       .collection-banner-block.w-maldives .text-block-wrapper p span:first-child {
         font-weight: 600;
@@ -306,13 +323,10 @@
       .item-collection-wrap {
         width: 100%;
         display: flex;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-start;
         overflow: hidden;
-        height: max-content;
+        /* height: max-content; */
       }
       /*.item-collection-wrap .item-home{
  			padding: 2vw 4.2vw;
@@ -323,35 +337,45 @@
         height: 33.6vw;
         --overflow: 50px;
         /*background-image: url('../assets/images/villa-thai-new-banner.png');*/
-        background-image: url("../assets/images/villa-thai-banner-update.jpg");
+        background-image: url('../assets/images/villa-thai-banner-update.jpg');
         background-size: cover;
+        background-position: center;
         will-change: transform;
         position: relative;
       }
+      .item-collection-wrap .item-img-home::before {
+        content: '';
+        background-color: #082c36;
+        opacity: 0.1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+      }
       .item-collection-wrap .item-img-home.dubai {
-        background-image: url("../assets/images/equilibri-travel.jpg");
+        background-image: url('../assets/images/equilibri-travel.jpg');
       }
       .item-collection-wrap .item-img-home.santa-barbara {
-        background-image: url("../assets/images/santa-barbara-banner.jpg");
+        background-image: url('../assets/images/santa-barbara-banner.jpg');
       }
       .item-collection-wrap .item-img-home.white-azores {
-        background-image: url("../assets/images/white-azores-banner.jpg");
+        background-image: url('../assets/images/white-azores-banner.jpg');
       }
       .item-collection-wrap .item-img-home.ritz-carlton {
-        background-image: url("../assets/images/wow-travel.jpg");
+        background-image: url('../assets/images/wow-travel.jpg');
       }
       .item-collection-wrap .item-img-home.w-maldives {
-        background-image: url("../assets/images/Overwarer-Suite-W-Maldives-cover.jpg");
+        background-image: url('../assets/images/Overwarer-Suite-W-Maldives-cover.jpg');
       }
       .item-collection-wrap .item-img-home.vommuli-island {
-        background-image: url("../assets/images/vommuli-island-collection.jpg");
+        background-image: url('../assets/images/vommuli-island-collection.jpg');
       }
       #body-wrapper main .inner-wrapper footer {
         margin-top: 5vw;
       }
 
       .item-collection-wrap .item-img-home::after {
-        content: "";
+        content: '';
         position: absolute;
         left: -1px;
         top: -1px;
@@ -369,7 +393,10 @@
         -ms-transform-origin: 0 0%;
         transition: transform 1.8s cubic-bezier(0.85, 0.13, 0.17, 0.97) 0.3s;
       }
-      #collection-block .collection-banner-block:nth-child(even) .item-collection-wrap .item-img-home::after {
+      #collection-block
+        .collection-banner-block:nth-child(even)
+        .item-collection-wrap
+        .item-img-home::after {
         transform-origin: 100% 0%;
         -webkit-transform-origin: 100% 0%;
         -moz-transform-origin: 100% 0%;
@@ -406,9 +433,7 @@
           line-height: 98%;
         }
         #collection-block .collection-banner-block .txt-para-new,
-        .collection-banner-block.headline_exception
-          .text-block-wrapper
-          p.txt-para-new {
+        .collection-banner-block.headline_exception .text-block-wrapper p.txt-para-new {
           padding-right: 0;
         }
         #collection-block .collection-banner-block:nth-child(even) .txt-para-new,
@@ -423,7 +448,7 @@
           width: 100%;
           padding-left: 0;
         }
-         #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
+        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
           width: 100%;
           padding-left: 0;
         }
@@ -440,9 +465,10 @@
         }
         .collection-banner-block .text-block-wrapper {
           width: 100%;
-          margin-top: 20px;
+          margin-top: 10px;
           padding-right: 0;
           padding-bottom: 0;
+          max-width: 100%;
         }
         .text-block-wrapper span.collection-link {
           font-size: 3.2vw;
@@ -454,7 +480,7 @@
           position: relative;
           width: 100%;
         }
-         #collection-block .collection-banner-block:nth-child(even) h1 {
+        #collection-block .collection-banner-block:nth-child(even) h1 {
           right: unset;
           left: 0;
         }
@@ -494,16 +520,21 @@
       type="text/css"
       href="../assets/css/style.css"
       media="none"
-      onload="if(media!='all')media='all'"
-    />
+      onload="if(media!='all')media='all'" />
     <noscript
-      ><link rel="stylesheet" href="../assets/css/style.css"
+      ><link
+        rel="stylesheet"
+        href="../assets/css/style.css"
     /></noscript>
   </head>
   <body>
     <div id="body-wrapper">
-      <main id="main-container" class="loading">
-        <div class="inner-wrapper" data-scroll>
+      <main
+        id="main-container"
+        class="loading">
+        <div
+          class="inner-wrapper"
+          data-scroll>
           <header>
             <span class="hide-from-desktop">
               <svg
@@ -511,24 +542,45 @@
                 height="18"
                 viewBox="0 0 24 18"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line y1="1" x2="24" y2="1" stroke="white" stroke-width="2" />
-                <line y1="9" x2="24" y2="9" stroke="white" stroke-width="2" />
-                <line y1="17" x2="24" y2="17" stroke="white" stroke-width="2" />
+                xmlns="http://www.w3.org/2000/svg">
+                <line
+                  y1="1"
+                  x2="24"
+                  y2="1"
+                  stroke="white"
+                  stroke-width="2" />
+                <line
+                  y1="9"
+                  x2="24"
+                  y2="9"
+                  stroke="white"
+                  stroke-width="2" />
+                <line
+                  y1="17"
+                  x2="24"
+                  y2="17"
+                  stroke="white"
+                  stroke-width="2" />
               </svg>
             </span>
             <nav>
               <div class="hide-from-desktop">
-                <a href="./" id="logo-block" style="text-align: center;">
-                  <img src="../assets/images/shomont-logo.png" alt="Shomont logo">
-                  </a>
-                  <div class="world-clock">
+                <a
+                  href="./"
+                  id="logo-block"
+                  style="text-align: center">
+                  <img
+                    src="../assets/images/shomont-logo.png"
+                    alt="Shomont logo" />
+                </a>
+                <div class="world-clock">
                   <div class="clock-time"></div>
-                  </div>
+                </div>
               </div>
               <ul id="navblock">
-                <li id="close-menu" class="hide-from-desktop">
+                <li
+                  id="close-menu"
+                  class="hide-from-desktop">
                   <svg
                     version="1.1"
                     id="Capa_1"
@@ -541,9 +593,9 @@
                     height="24px"
                     viewBox="0 0 357 357"
                     style="enable-background: new 0 0 357 357"
-                    xml:space="preserve"
-                  >
-                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/>
+                    xml:space="preserve">
+                    <polygon
+                      points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5" />
                   </svg>
                 </li>
                 <li class="hide-from-desktop home">
@@ -552,27 +604,52 @@
                 <li class="clock hide-on-mobile">
                   <div class="world-clock">
                     <div class="clock-time"></div>
-                    </div>
-                  </li>
-                <li><a href="../about" class="about">about us</a></li>
-                <li>
-                  <a href="../services" class="services">our services</a>
+                  </div>
                 </li>
-              <li class="hide-on-mobile">
-              <a href="../" id="logo-block">
-                <img
-                  src="../assets/images/shomont-logo.png"
-                  alt="Shomont logo"
-                />
-              </a>
-              </li>
                 <li>
-                  <a href="../collections" class="collections"
+                  <a
+                    href="../about"
+                    class="about"
+                    >about us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../services"
+                    class="services"
+                    >our services</a
+                  >
+                </li>
+                <li class="hide-on-mobile">
+                  <a
+                    href="../"
+                    id="logo-block">
+                    <img
+                      src="../assets/images/shomont-logo.png"
+                      alt="Shomont logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="../collections"
+                    class="collections"
                     >our collection</a
                   >
                 </li>
-                <li><a href="../previous-partners" class="previous-partners">previous partners</a></li>
-                <li><a href="../contact" class="contact">contact us</a></li>
+                <li>
+                  <a
+                    href="../previous-partners"
+                    class="previous-partners"
+                    >previous partners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact"
+                    class="contact"
+                    >contact us</a
+                  >
+                </li>
               </ul>
             </nav>
           </header>
@@ -581,46 +658,54 @@
             <div class="collection-banner-block vommuli-island">
               <div class="text-block-wrapper">
                 <h1>
-                  <p data-animate>Vommuli Island</p>
+                  <p data-animate>St. Regis Maldives</p>
+                  <p
+                    data-animate
+                    class="italic mix-up">
+                    Vommuli Island
+                  </p>
                 </h1>
-                <p class="txt-para-new">
-                  The St. Regis Maldives Vommuli Island, refined yet contemporary design
-                  blends effortlessly with local craftsmanship and an
-                  appreciation for its ecological environment. Impeccably
-                  crafted dishes from all over the world are cooked to
-                  perfection and every possible luxury can be found at
-                  this exquisite Maldives retreat.
-                </p>
-                <span class="collection-link bottom-line">
-                  <a href="./vommuli-island/">discover more</a>
-                </span>
+                <div class="text-block-wrapper-details">
+                  <p class="txt-para-new">
+                    The St. Regis Maldives Vommuli Island, refined yet contemporary design blends
+                    effortlessly with local craftsmanship and an appreciation for its ecological
+                    environment. Impeccably crafted dishes from all over the world are cooked to
+                    perfection and every possible luxury can be found at this exquisite Maldives
+                    retreat.
+                  </p>
+                  <span class="collection-link bottom-line">
+                    <a href="./st-regis-maldives-vommuli-island/">discover more</a>
+                  </span>
+                </div>
               </div>
               <a
-                href="./vommuli-island/"
-                class="item-collection-wrap background-wrapper"
-              >
+                href="./st-regis-maldives-vommuli-island/"
+                class="item-collection-wrap background-wrapper">
                 <div class="item-collection item-home">
                   <div class="item-img-home vommuli-island"></div>
                 </div>
               </a>
             </div>
 
-            <div class="collection-banner-block  w-maldives">
+            <div class="collection-banner-block w-maldives">
               <div class="text-block-wrapper">
                 <h1>
                   <p data-animate>W Maldives</p>
                 </h1>
-                <p class="txt-para-new">
-                  Now reopened after a 9 months renovation, come and discover W Maldives where turquoise water and pristine sand come infused with W Maldives' signature style, luxury and personality....
-                </p>
-                <span class="collection-link bottom-line">
-                  <a href="./w-maldives/">discover more</a>
-                </span>
+                <div class="text-block-wrapper-details">
+                  <p class="txt-para-new">
+                    Now reopened after a 9 months renovation, come and discover W Maldives where
+                    turquoise water and pristine sand come infused with W Maldives' signature style,
+                    luxury and personality....
+                  </p>
+                  <span class="collection-link bottom-line">
+                    <a href="./w-maldives/">discover more</a>
+                  </span>
+                </div>
               </div>
               <a
                 href="./w-maldives/"
-                class="item-collection-wrap background-wrapper"
-              >
+                class="item-collection-wrap background-wrapper">
                 <div class="item-collection item-home">
                   <div class="item-img-home w-maldives"></div>
                 </div>
@@ -633,17 +718,21 @@
                   <p data-animate>Wów Travels</p>
                   <!-- <p data-animate class="italic mix-up">Tenerife, Abama</p> -->
                 </h1>
-                <p class="txt-para-new">
-                  Introducing wówtravels, a B2B Destination Management Company based in Bali, specializing in creating memorable experiences in Indonesia , Malaysia and Borneo. We exclusively collaborate luxury agencies (Virtuoso and Serandipians), boutique Tour Operators and M.I.C.E. agencies.
-                </p>
-                <span class="collection-link bottom-line">
-                  <a href="./wow-travels/">discover more</a>
-                </span>
+                <div class="text-block-wrapper-details">
+                  <p class="txt-para-new">
+                    Introducing wówtravels, a B2B Destination Management Company based in Bali,
+                    specializing in creating memorable experiences in Indonesia , Malaysia and
+                    Borneo. We exclusively collaborate luxury agencies (Virtuoso and Serandipians),
+                    boutique Tour Operators and M.I.C.E. agencies.
+                  </p>
+                  <span class="collection-link bottom-line">
+                    <a href="./wow-travels/">discover more</a>
+                  </span>
+                </div>
               </div>
               <a
                 href="./wow-travels/"
-                class="item-collection-wrap background-wrapper"
-              >
+                class="item-collection-wrap background-wrapper">
                 <div class="item-collection item-home">
                   <div class="item-img-home ritz-carlton"></div>
                 </div>
@@ -655,17 +744,21 @@
                 <h1 class="nikki-beach">
                   <p data-animate>Equilibri Travel</p>
                 </h1>
-                <p class="txt-para-new">
-                  Since 2019, Equilibri Boutique Travel Agency has been specializing in luxury travel experiences across Croatia, Montenegro, Albania and Greece partnering with select agencies who share our commitment to exceptional service, bespoke travel, and lasting memories.
-                </p>
-                <span class="collection-link bottom-line">
-                  <a href="./equilibri-travel/">discover more</a>
-                </span>
+                <div class="text-block-wrapper-details">
+                  <p class="txt-para-new">
+                    Since 2019, Equilibri Boutique Travel Agency has been specializing in luxury
+                    travel experiences across Croatia, Montenegro, Albania and Greece partnering
+                    with select agencies who share our commitment to exceptional service, bespoke
+                    travel, and lasting memories.
+                  </p>
+                  <span class="collection-link bottom-line">
+                    <a href="./equilibri-travel/">discover more</a>
+                  </span>
+                </div>
               </div>
               <a
                 href="./equilibri-travel/"
-                class="item-collection-wrap background-wrapper"
-              >
+                class="item-collection-wrap background-wrapper">
                 <div class="item-collection item-home">
                   <div class="item-img-home dubai"></div>
                 </div>
@@ -676,19 +769,26 @@
               <div class="text-block-wrapper">
                 <h1>
                   <p data-animate>The Villa</p>
-                  <p data-animate class="italic mix-up">Thailand</p>
+                  <p
+                    data-animate
+                    class="italic">
+                    Thailand
+                  </p>
                 </h1>
-                <p class="txt-para-new">
-                  THE Villa is one of the most luxurious private destinations in Asia, it is the perfect super-luxury destination for families, groups of friends or exclusive corporate gatherings and offers complete privacy and...
-                </p>
-                <span class="collection-link bottom-line">
-                  <a href="./villa-thailand">discover more</a>
-                </span>
+                <div class="text-block-wrapper-details">
+                  <p class="txt-para-new">
+                    THE Villa is one of the most luxurious private destinations in Asia, it is the
+                    perfect super-luxury destination for families, groups of friends or exclusive
+                    corporate gatherings and offers complete privacy and...
+                  </p>
+                  <span class="collection-link bottom-line">
+                    <a href="./villa-thailand">discover more</a>
+                  </span>
+                </div>
               </div>
               <a
                 href="./villa-thailand"
-                class="item-collection-wrap background-wrapper"
-              >
+                class="item-collection-wrap background-wrapper">
                 <div class="item-collection item-home">
                   <div class="item-img-home"></div>
                 </div>
@@ -700,14 +800,46 @@
             <ul>
               <li>
                 <a href="../">
-                  <img src="../assets/images/shomont-footer-logo.png" alt="Shomont logo">
+                  <img
+                    src="../assets/images/shomont-footer-logo.png"
+                    alt="Shomont logo" />
                 </a>
               </li>
-              <li><a href="../collections" class="collections menu">our collection</a></li>
-              <li><a href="../previous-partners" class="previous-partners menu">previous partners</a></li>
-              <li><a href="../about" class="about menu">about us</a></li>
-              <li><a href="../services" class="services menu">our services</a></li>
-              <li><a href="../contact" class="contact menu">contact us</a></li>
+              <li>
+                <a
+                  href="../collections"
+                  class="collections menu"
+                  >our collection</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../previous-partners"
+                  class="previous-partners menu"
+                  >previous partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about"
+                  class="about menu"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services"
+                  class="services menu"
+                  >our services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact"
+                  class="contact menu"
+                  >contact us</a
+                >
+              </li>
             </ul>
           </footer>
         </div>
@@ -717,55 +849,54 @@
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
     <script
       type="text/javascript"
-      src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"
-    ></script>
-    <script type="text/javascript" src="../assets/js/timer-control.js"></script>
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+      src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CIntersectionObserver%2CArray.prototype.forEach%2Cdocument.querySelector"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/timer-control.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        var childLen = $("#timeholder").children("li").length;
+        var childLen = $('#timeholder').children('li').length;
         setInterval(timeZoneIterate, 3000);
         var c = 0;
         function timeZoneIterate() {
           if (c == childLen) {
-            $(".zone").removeClass("activezone");
-            $(".zone:nth-child(1)").addClass("activezone");
+            $('.zone').removeClass('activezone');
+            $('.zone:nth-child(1)').addClass('activezone');
             c = 0;
           } else {
-            $(".zone").removeClass("activezone");
-            $("#timeholder")
-              .children(".zone:nth-child(" + (c + 1) + ")")
-              .addClass("activezone");
+            $('.zone').removeClass('activezone');
+            $('#timeholder')
+              .children('.zone:nth-child(' + (c + 1) + ')')
+              .addClass('activezone');
           }
           c++;
         }
       });
     </script>
-    <script type="text/javascript" src="../assets/js/smooth-scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/smooth-scroll.js"></script>
     <script type="text/javascript">
-      var collectionReveal = document.querySelectorAll(
-        ".collection-banner-block"
-      );
+      var collectionReveal = document.querySelectorAll('.collection-banner-block');
       var imgConfig = {
         root: null,
         threshold: 0.1,
-        rootMargin: "0px",
+        rootMargin: '0px',
       };
 
-      var observerCollection = new IntersectionObserver(function (
-        entries,
-        observer
-      ) {
+      var observerCollection = new IntersectionObserver(function (entries, observer) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) {
             return;
           }
 
-          entry.target.classList.add("active");
+          entry.target.classList.add('active');
           observer.unobserve(entry.target);
         });
-      },
-      imgConfig);
+      }, imgConfig);
 
       Array.prototype.slice.call(collectionReveal).forEach(function (el) {
         observerCollection.observe(el);

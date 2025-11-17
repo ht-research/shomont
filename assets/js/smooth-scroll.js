@@ -142,7 +142,7 @@ var SmoothScroll = /*#__PURE__*/function () {
           this.DOM.scrollable.style.transform = "translate3d(0,0,0)";
       }
 
-      
+
     }
   }, {
     key: "setSize",
@@ -156,7 +156,7 @@ var SmoothScroll = /*#__PURE__*/function () {
     key: "style",
     value: function style() {
       // the <main> needs to "stick" to the screen and not scroll
-      // for that we set it to position fixed and overflow hidden 
+      // for that we set it to position fixed and overflow hidden
       this.DOM.main.style.position = 'fixed';
       this.DOM.main.style.width = this.DOM.main.style.height = '100%';
       this.DOM.main.style.top = this.DOM.main.style.left = 0;
@@ -540,6 +540,7 @@ var TextSliderUpper = /*#__PURE__*/function () {
       var content = ''; // Loop through each word, wrap each character in a span
 
       Array.prototype.slice.call(words).forEach(function (word, multiplier) {
+        if (!word.trim()) return;
         var word_split = word.split(/([^\x00-\x80]|\w)/g);
         var word_content = ''; // Look through each letter, add a delay (incremented)
 
@@ -625,8 +626,8 @@ if (viewportSize < 769) {
       bodyNew.classList.remove('stick');
       scrollInstance = true;
     // },1000);
-    
-    
+
+
   });
 } // paragraph roam
 
