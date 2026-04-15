@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta
@@ -18,7 +18,7 @@
       href="https://use.typekit.net/bhq0cwo.css"
       crossorigin="anonymous"
       media="none"
-      onload="if(media!='all')media='all'" />
+      onload="if (media != 'all') media = 'all';" />
     <noscript
       ><link
         rel="stylesheet"
@@ -31,7 +31,7 @@
       href="https://use.typekit.net/sgm4bit.css"
       crossorigin="anonymous"
       media="none"
-      onload="if(media!='all')media='all'" />
+      onload="if (media != 'all') media = 'all';" />
     <noscript
       ><link
         rel="stylesheet"
@@ -51,203 +51,86 @@
       content="../assets/images/shomont-thumbnail.jpg" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
       type="text/css"
       href="../assets/css/custom.css" />
     <style type="text/css">
+      #body-wrapper main .inner-wrapper footer {
+        margin-top: 0 !important;
+      }
       #collection-block {
         width: 100%;
         position: relative;
-        margin-top: 4.2vw;
+        margin-top: 3.25vw;
+        margin-bottom: 7.25vw;
       }
       #collection-block .collection-banner-block {
         width: 100%;
+        height: 100%;
         display: flex;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
         justify-content: flex-start;
         align-items: stretch;
-        margin-bottom: 11vw;
+        flex-direction: column;
+        gap: 44px;
       }
-      #collection-block .collection-banner-block:nth-child(even) {
-        flex-direction: row-reverse;
+      .item-collection-wrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
       }
-      #collection-block .collection-banner-block:nth-child(even) .txt-para-new,
-      #collection-block .collection-banner-block:nth-child(even) .txt-para {
-        text-align: right;
-        padding-right: 0;
+      .item-collection-wrap .item-collection {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1/1.1;
+        transform: none !important;
       }
-      #collection-block .collection-banner-block:nth-child(even) span {
-        text-align: right;
-      }
-      #collection-block .collection-banner-block:nth-child(even) span::before {
-        left: unset;
-        right: 0;
-        transform-origin: 100% 0;
-        -webkit-transform-origin: 100% 0;
-        -moz-transform-origin: 100% 0;
-        -ms-transform-origin: 100% 0;
-      }
-      .collection-banner-block .text-block-wrapper h3 {
-        font-family: 'presicav', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 0.7vw;
-        line-height: 100%;
-        text-align: left;
-        letter-spacing: 0.45em;
-        color: rgba(255, 255, 255, 0.7);
-        opacity: 0;
-        transform: translate3d(0, 20px, 0);
-        -webkit-transform: translate3d(0, 20px, 0);
-        -moz-transform: translate3d(0, 20px, 0);
-        -ms-transform: translate3d(0, 20px, 0);
-        transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -webkit-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -moz-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -ms-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-      }
-      .collection-banner-block.active .text-block-wrapper h3 {
-        opacity: 1;
-        transform: translate3d(0, 0, 0px);
-        -webkit-transform: translate3d(0, 0, 0px);
-        -moz-transform: translate3d(0, 0, 0px);
-        -ms-transform: translate3d(0, 0, 0px);
-      }
-      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h3 {
-        text-align: right;
-      }
-      .collection-banner-block .text-block-wrapper h3 span {
-        font-style: italic;
-        font-family: 'freight-display-pro', sans-serif;
-        letter-spacing: normal;
-        font-size: 0.95vw;
-        display: inline-block;
-        margin-right: 0.8vw;
+      .item-collection-wrap .item-collection img {
+        height: 101%;
+        width: 101%;
+        object-fit: cover;
       }
       .collection-banner-block .text-block-wrapper {
-        width: 45vw;
+        width: 100%;
         position: relative;
-        /*white-space: nowrap; */
         margin-top: 0;
-        padding-right: 3vw;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 4vw;
         align-items: self-start;
-        max-width: 25.5vw;
+        flex: 1;
       }
       .text-block-wrapper-details {
         margin-top: auto;
+        width: 100%;
       }
       .text-block-wrapper h1 p {
         text-align: left;
       }
-      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
-        padding-left: 3vw;
-        padding-right: 0;
-        align-items: self-end;
-      }
-      #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h1 p {
-        text-align: right;
-      }
-      .collection-banner-block .text-block-wrapper p.txt-para-new {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.185vw;
-        line-height: 165%;
-        color: rgba(255, 255, 255, 0.5);
-        padding: 0 0 0 0;
-        margin-top: 2vw;
-        opacity: 0;
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
-        -moz-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        transition: all 0.5s linear 1.1s;
-      }
-      .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
-        text-align: right;
-      }
-      .collection-banner-block .text-block-wrapper p.txt-para-new a {
-        color: #fff;
-        border-bottom: 1px solid #fff;
-        display: inline-block;
-        line-height: 1.1;
-        font-size: 1.05vw;
-        letter-spacing: 1.4px;
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-      }
-      .collection-banner-block .text-block-wrapper p.txt-para-new a:hover {
-        color: #ba877b;
-        border-color: #ba877b;
-      }
-      .collection-banner-block.active .text-block-wrapper p.txt-para-new {
-        opacity: 1;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-      }
-      /*.collection-banner-block .text-block-wrapper p.txt-para.reappear{
- 			opacity: 1;
-		    transform: translateY(0px);
-		    -webkit-transform: translateY(0px);
-		    -moz-transform: translateY(0px);
-		    -ms-transform: translateY(0px);
- 		}*/
       .collection-banner-block .text-block-wrapper span a {
         opacity: 0;
         transform: translate3d(0, 20px, 0);
-        -webkit-transform: translate3d(0, 20px, 0);
-        -moz-transform: translate3d(0, 20px, 0);
-        -ms-transform: translate3d(0, 20px, 0);
         transition: opacity 0.5s ease-in 1.4s;
-        -webkit-transition: opacity 0.5s ease-in 1.4s;
-        -moz-transition: opacity 0.5s ease-in 1.4s;
-        -ms-transition: opacity 0.5s ease-in 1.4s;
       }
       .collection-banner-block.active .text-block-wrapper span a {
         opacity: 1;
         transform: translate3d(0, 0px, 0);
-        -webkit-transform: translate3d(0, 0px, 0);
-        -moz-transform: translate3d(0, 0px, 0);
-        -ms-transform: translate3d(0, 0px, 0);
-      }
-      .text-block-wrapper span.collection-link {
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        transition: all 0.3s;
       }
       .text-block-wrapper span.collection-link:hover {
         color: #fff;
       }
       .collection-banner-block.active .text-block-wrapper span::before {
         transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
       }
       .collection-banner-block .text-block-wrapper p[data-animate] {
-        transform: translate3d(0, 40px, 0);
-        -webkit-transform: translate3d(0, 40px, 0);
-        -moz-transform: translate3d(0, 40px, 0);
-        -ms-transform: translate3d(0, 40px, 0);
-        transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -webkit-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -moz-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
-        -ms-transition: all 1s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.6s;
+        transform: translate3d(0, 20px, 0);
+        transition: all 0.5s cubic-bezier(0.66, 0.15, 0.33, 0.71) 0.25s;
       }
       .collection-banner-block.active .text-block-wrapper p[data-animate] {
         transform: translate3d(0, 0px, 0);
-        -webkit-transform: translate3d(0, 0px, 0);
-        -moz-transform: translate3d(0, 0px, 0);
-        -ms-transform: translate3d(0, 0px, 0);
       }
       .text-block-wrapper span.collection-link {
         font-family: 'presicav', sans-serif;
@@ -255,7 +138,7 @@
         font-weight: 400;
         font-size: 1.252vw;
         line-height: 2;
-        margin-top: 2vw;
+        margin-top: 4vw;
         letter-spacing: -0.015em;
         color: #ba877b;
         display: block;
@@ -263,255 +146,106 @@
         position: relative;
       }
       .collection-link::before {
-        width: 52vw;
+        width: 100%;
         z-index: 3;
         transform: scaleX(0);
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-        transition: 1.2s cubic-bezier(0.85, 0.03, 0.29, 0.94) 1.5s;
+        transition: 1s cubic-bezier(0.85, 0.03, 0.29, 0.94) 1s;
       }
 
       .collection-banner-block h1 {
         position: relative;
-        /*top:50%;
- 			left:0;
- 			transform:translateY(-50%);
- 			-webkit-transform:translateY(-50%);
- 			-moz-transform:translateY(-50%);
- 			-ms-transform:translateY(-50%);*/
         font-family: 'freight-display-pro', sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 7.292vw;
+        font-size: 4.1vw;
         line-height: 80%;
         letter-spacing: -0.015em;
         color: #ffffff;
         z-index: 3;
-        top: 1vw;
-        left: 0;
         overflow: visible;
-        width: 61vw;
-        /*position: relative;*/
-      }
-      .collection-banner-block h1.tag-property {
-        top: 2.5vw;
-      }
-      #collection-block .collection-banner-block:nth-child(even) h1 {
-        left: unset;
-        right: 0;
-      }
-      .collection-banner-block.ritz-carlton h1 {
-        margin-top: 2vw;
       }
       .collection-banner-block h1 p {
         line-height: 90%;
-        margin-top: calc(-1 * 1vw);
-      }
-      .collection-banner-block.w-maldives .text-block-wrapper p span:first-child {
-        font-weight: 600;
       }
       .collection-banner-block h1 p.italic {
-        font-size: 5.24vw;
+        font-size: 2.4vw;
+        margin-top: 1.6vw;
       }
-      .collection-banner-block h1 p.mix-up span:last-child {
-        font-style: italic;
-      }
-      /*.collection-banner-block h1 span{
- 			display:block;
- 		}*/
-      .item-collection-wrap {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        overflow: hidden;
-        /* height: max-content; */
-      }
-      /*.item-collection-wrap .item-home{
- 			padding: 2vw 4.2vw;
- 		}*/
-      .item-collection-wrap .item-img-home {
-        /*width:59.1vw;*/
-        width: 52vw;
-        height: 33.6vw;
-        --overflow: 50px;
-        /*background-image: url('../assets/images/villa-thai-new-banner.png');*/
-        background-image: url('../assets/images/villa-thai-banner-update.jpg');
-        background-size: cover;
-        background-position: center;
-        will-change: transform;
-        position: relative;
-      }
-      .item-collection-wrap .item-img-home::before {
-        content: '';
-        background-color: #082c36;
-        opacity: 0.1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        inset: 0;
-      }
-      .item-collection-wrap .item-img-home.dubai {
-        background-image: url('../assets/images/equilibri-travel.jpg');
-      }
-      .item-collection-wrap .item-img-home.santa-barbara {
-        background-image: url('../assets/images/santa-barbara-banner.jpg');
-      }
-      .item-collection-wrap .item-img-home.white-azores {
-        background-image: url('../assets/images/white-azores-banner.jpg');
-      }
-      .item-collection-wrap .item-img-home.ritz-carlton {
-        background-image: url('../assets/images/wow-travel.jpg');
-      }
-      .item-collection-wrap .item-img-home.w-maldives {
-        background-image: url('../assets/images/Overwarer-Suite-W-Maldives-cover.jpg');
-      }
-      .item-collection-wrap .item-img-home.vommuli-island {
-        background-image: url('../assets/images/vommuli-island-collection.jpg');
-      }
-      #body-wrapper main .inner-wrapper footer {
-        margin-top: 5vw;
+      .collection-banner-block h1 p[data-animate] > span {
+        line-height: unset;
       }
 
-      .item-collection-wrap .item-img-home::after {
-        content: '';
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        background-color: #082c36;
-        width: 101%;
-        height: 101%;
-        will-change: transform;
-        transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform-origin: 0 0%;
-        -webkit-transform-origin: 0 0%;
-        -moz-transform-origin: 0 0%;
-        -ms-transform-origin: 0 0%;
-        transition: transform 1.8s cubic-bezier(0.85, 0.13, 0.17, 0.97) 0.3s;
+      /*** Swiper custom styles **/
+      .swiper-collection {
+        overflow: visible !important;
       }
-      #collection-block
-        .collection-banner-block:nth-child(even)
-        .item-collection-wrap
-        .item-img-home::after {
-        transform-origin: 100% 0%;
-        -webkit-transform-origin: 100% 0%;
-        -moz-transform-origin: 100% 0%;
-        -ms-transform-origin: 100% 0%;
+      .swiper-collection .swiper-slide {
+        height: auto;
       }
-      .item-collection-wrap .item-img-home.reveal::after {
-        transform: scaleX(0);
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
+      .swiper-collection .swiper-button-next,
+      .swiper-collection .swiper-button-prev {
+        --swiper-navigation-size: 7.5vw;
+        --swiper-navigation-top-offset: 35%;
+        --swiper-navigation-sides-offset: -75px;
+        border: 1px solid #ba877b;
+        background-color: #ba877b;
+        border-radius: 99999px;
       }
-      .collection-banner-block.headline_exception h1 {
-        width: 50vw;
+      .swiper-collection .swiper-button-next:hover,
+      .swiper-collection .swiper-button-prev:hover {
+        opacity: 0.75;
       }
-      .collection-banner-block.headline_exception h1 p {
-        line-height: 85%;
+      .swiper-collection .swiper-button-next svg,
+      .swiper-collection .swiper-button-prev svg {
+        fill: transparent;
+        width: 1.9vw;
+        height: auto;
       }
-      .collection-banner-block.headline_exception [data-animate] > span {
-        line-height: 85%;
-      }
-      .collection-banner-block.headline_exception p.mix-up {
-        /* margin-top: calc(-0.5*1.2vw); */
-        margin-top: calc(0.1vw);
+      .swiper-collection .swiper-button-next.swiper-button-disabled,
+      .swiper-collection .swiper-button-prev.swiper-button-disabled {
+        pointer-events: unset;
       }
 
       @media screen and (max-width: 768px) {
-        .collection-banner-block.headline_exception h1.nikki-beach {
-          width: 80vw;
+        #collection-block {
+          margin-top: 4.2vw;
         }
-        .collection-banner-block.headline_exception h1 p {
-          line-height: 97%;
-        }
-        .collection-banner-block.headline_exception [data-animate] > span {
-          line-height: 98%;
-        }
-        #collection-block .collection-banner-block .txt-para-new,
-        .collection-banner-block.headline_exception .text-block-wrapper p.txt-para-new {
-          padding-right: 0;
-        }
-        #collection-block .collection-banner-block:nth-child(even) .txt-para-new,
-        .collection-banner-block .text-block-wrapper p.txt-para-new.text-right {
-          text-align: left;
+        #collection-block .collection-banner-block {
+          gap: 36px;
         }
         .item-collection-wrap .item-collection {
-          padding: 9.51vw 7.1vw;
           width: 100%;
-        }
-        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
-          width: 100%;
-          padding-left: 0;
-        }
-        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper {
-          width: 100%;
-          padding-left: 0;
-        }
-        .collection-banner-block .text-block-wrapper p.txt-para-new {
-          font-size: 4.2vw;
-        }
-        #collection-block .collection-banner-block:nth-child(even) .text-block-wrapper h1 p,
-        #collection-block .collection-banner-block:nth-child(even) span {
-          text-align: left;
-        }
-        #collection-block .collection-banner-block:nth-child(even) span::before {
-          left: 0;
-          right: unset;
+          aspect-ratio: 1/0.8;
         }
         .collection-banner-block .text-block-wrapper {
           width: 100%;
-          margin-top: 10px;
           padding-right: 0;
           padding-bottom: 0;
           max-width: 100%;
         }
         .text-block-wrapper span.collection-link {
           font-size: 3.2vw;
-          margin-top: 5.5vw;
+          margin-top: 40px;
         }
-        .collection-banner-block h1,
+        .collection-banner-block h1 {
+          font-size: 13.25vw;
+          position: relative;
+          width: 95%;
+        }
         .collection-banner-block h1 p.italic {
-          font-size: 13.4vw;
+          font-size: 9vw;
           position: relative;
           width: 100%;
+          margin-top: 16px;
         }
-        #collection-block .collection-banner-block:nth-child(even) h1 {
-          right: unset;
-          left: 0;
+        .swiper-collection .swiper-button-next,
+        .swiper-collection .swiper-button-prev {
+          --swiper-navigation-size: 60px;
+          --swiper-navigation-sides-offset: -20px;
         }
-        .collection-banner-block.headline_exception h1 {
-          width: 100%;
-        }
-        #collection-block {
-          margin-top: 4.2vw;
-        }
-        #collection-block .collection-banner-block {
-          flex-direction: column-reverse;
-        }
-        #collection-block .collection-banner-block:nth-child(even) {
-          flex-direction: column-reverse;
-        }
-        .item-collection-wrap .item-img-home {
-          width: 100%;
-          background-position: bottom -30px right;
-        }
-        .collection-link::before {
-          width: 79vw;
-        }
-        .collection-banner-block.active .text-block-wrapper p[data-animate] {
-          opacity: 1;
-          transform: translate3d(0, 0%, 0);
-          -webkit-transform: translate3d(0, 0%, 0);
-          -moz-transform: translate3d(0, 0%, 0);
-          -ms-transform: translate3d(0, 0%, 0);
-        }
-        .collection-banner-block .text-block-wrapper p.txt-para-new a {
-          font-size: 3.4vw;
+        .swiper-collection .swiper-button-next svg,
+        .swiper-collection .swiper-button-prev svg {
+          width: 10px;
         }
       }
     </style>
@@ -520,7 +254,7 @@
       type="text/css"
       href="../assets/css/style.css"
       media="none"
-      onload="if(media!='all')media='all'" />
+      onload="if (media != 'all') media = 'all';" />
     <noscript
       ><link
         rel="stylesheet"
@@ -655,144 +389,211 @@
           </header>
 
           <section id="collection-block">
-            <div class="collection-banner-block vommuli-island">
-              <div class="text-block-wrapper">
-                <h1>
-                  <p data-animate>St. Regis Maldives</p>
-                  <p
-                    data-animate
-                    class="italic mix-up">
-                    Vommuli Island
-                  </p>
-                </h1>
-                <div class="text-block-wrapper-details">
-                  <p class="txt-para-new">
-                    The St. Regis Maldives Vommuli Island, refined yet contemporary design blends
-                    effortlessly with local craftsmanship and an appreciation for its ecological
-                    environment. Impeccably crafted dishes from all over the world are cooked to
-                    perfection and every possible luxury can be found at this exquisite Maldives
-                    retreat.
-                  </p>
-                  <span class="collection-link bottom-line">
-                    <a href="./st-regis-maldives-vommuli-island/">discover more</a>
-                  </span>
+            <div class="swiper swiper-collection">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="collection-banner-block">
+                    <a
+                      href="./st-regis-maldives-vommuli-island/"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/st-regis-maldives.jpg"
+                          alt="" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>St. Regis Maldives</p>
+                        <p
+                          data-animate
+                          class="italic mix-up">
+                          Vommuli Island
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./st-regis-maldives-vommuli-island/">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <a
-                href="./st-regis-maldives-vommuli-island/"
-                class="item-collection-wrap background-wrapper">
-                <div class="item-collection item-home">
-                  <div class="item-img-home vommuli-island"></div>
-                </div>
-              </a>
-            </div>
 
-            <div class="collection-banner-block w-maldives">
-              <div class="text-block-wrapper">
-                <h1>
-                  <p data-animate>W Maldives</p>
-                </h1>
-                <div class="text-block-wrapper-details">
-                  <p class="txt-para-new">
-                    Now reopened after a 9 months renovation, come and discover W Maldives where
-                    turquoise water and pristine sand come infused with W Maldives' signature style,
-                    luxury and personality....
-                  </p>
-                  <span class="collection-link bottom-line">
-                    <a href="./w-maldives/">discover more</a>
-                  </span>
+                <div class="swiper-slide">
+                  <div class="collection-banner-block">
+                    <a
+                      href="./vione-paros"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/vione-paros.jpg"
+                          alt="" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>Vione Paros</p>
+                        <p
+                          data-animate
+                          class="italic">
+                          Greece
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./vione-paros">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <a
-                href="./w-maldives/"
-                class="item-collection-wrap background-wrapper">
-                <div class="item-collection item-home">
-                  <div class="item-img-home w-maldives"></div>
-                </div>
-              </a>
-            </div>
 
-            <div class="collection-banner-block ritz-carlton">
-              <div class="text-block-wrapper">
-                <h1>
-                  <p data-animate>Wów Travels</p>
-                  <!-- <p data-animate class="italic mix-up">Tenerife, Abama</p> -->
-                </h1>
-                <div class="text-block-wrapper-details">
-                  <p class="txt-para-new">
-                    Introducing wówtravels, a B2B Destination Management Company based in Bali,
-                    specializing in creating memorable experiences in Indonesia , Malaysia and
-                    Borneo. We exclusively collaborate luxury agencies (Virtuoso and Serandipians),
-                    boutique Tour Operators and M.I.C.E. agencies.
-                  </p>
-                  <span class="collection-link bottom-line">
-                    <a href="./wow-travels/">discover more</a>
-                  </span>
+                <div class="swiper-slide">
+                  <div class="collection-banner-block">
+                    <a
+                      href="./eliamos-villas-hotel-spa"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/eliamos-villas.jpg"
+                          alt="" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>Eliamos Villas Hotel & Spa</p>
+                        <p
+                          data-animate
+                          class="italic">
+                          Greece
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./eliamos-villas-hotel-spa">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <a
-                href="./wow-travels/"
-                class="item-collection-wrap background-wrapper">
-                <div class="item-collection item-home">
-                  <div class="item-img-home ritz-carlton"></div>
-                </div>
-              </a>
-            </div>
 
-            <div class="collection-banner-block">
-              <div class="text-block-wrapper">
-                <h1 class="nikki-beach">
-                  <p data-animate>Equilibri Travel</p>
-                </h1>
-                <div class="text-block-wrapper-details">
-                  <p class="txt-para-new">
-                    Since 2019, Equilibri Boutique Travel Agency has been specializing in luxury
-                    travel experiences across Croatia, Montenegro, Albania and Greece partnering
-                    with select agencies who share our commitment to exceptional service, bespoke
-                    travel, and lasting memories.
-                  </p>
-                  <span class="collection-link bottom-line">
-                    <a href="./equilibri-travel/">discover more</a>
-                  </span>
+                <div class="swiper-slide">
+                  <div class="collection-banner-block w-maldives">
+                    <a
+                      href="./w-maldives/"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/w-maldives.jpg"
+                          alt="W Maldives" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>W Maldives</p>
+                        <p
+                          data-animate
+                          class="italic">
+                          Maldives
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./w-maldives/">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <a
-                href="./equilibri-travel/"
-                class="item-collection-wrap background-wrapper">
-                <div class="item-collection item-home">
-                  <div class="item-img-home dubai"></div>
-                </div>
-              </a>
-            </div>
 
-            <div class="collection-banner-block">
-              <div class="text-block-wrapper">
-                <h1>
-                  <p data-animate>The Villa</p>
-                  <p
-                    data-animate
-                    class="italic">
-                    Thailand
-                  </p>
-                </h1>
-                <div class="text-block-wrapper-details">
-                  <p class="txt-para-new">
-                    THE Villa is one of the most luxurious private destinations in Asia, it is the
-                    perfect super-luxury destination for families, groups of friends or exclusive
-                    corporate gatherings and offers complete privacy and...
-                  </p>
-                  <span class="collection-link bottom-line">
-                    <a href="./villa-thailand">discover more</a>
-                  </span>
+                <div class="swiper-slide">
+                  <div class="collection-banner-block">
+                    <a
+                      href="./omeon"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/omeon.jpg"
+                          alt="" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>Omeon</p>
+                        <p
+                          data-animate
+                          class="italic">
+                          Mykonos, Greece
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./omeon">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="collection-banner-block">
+                    <a
+                      href="./villa-thailand"
+                      class="item-collection-wrap background-wrapper">
+                      <div class="item-collection item-home">
+                        <img
+                          src="../assets/images/the-vila.jpg"
+                          alt="The Villa Thailand" />
+                      </div>
+                    </a>
+                    <div class="text-block-wrapper">
+                      <h1>
+                        <p data-animate>The Villa</p>
+                        <p
+                          data-animate
+                          class="italic">
+                          Thailand
+                        </p>
+                      </h1>
+                      <div class="text-block-wrapper-details">
+                        <span class="collection-link bottom-line">
+                          <a href="./villa-thailand">discover more</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a
-                href="./villa-thailand"
-                class="item-collection-wrap background-wrapper">
-                <div class="item-collection item-home">
-                  <div class="item-img-home"></div>
-                </div>
-              </a>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg
+                  width="27"
+                  height="38"
+                  viewBox="0 0 27 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.0208 2.99023L6.02075 18.9902L24.0208 34.9902"
+                    stroke="white"
+                    stroke-width="8" />
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="27"
+                  height="38"
+                  viewBox="0 0 27 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.65747 2.99023L20.6575 18.9902L2.65747 34.9902"
+                    stroke="white"
+                    stroke-width="8" />
+                </svg>
+              </div>
             </div>
           </section>
 
@@ -900,6 +701,26 @@
 
       Array.prototype.slice.call(collectionReveal).forEach(function (el) {
         observerCollection.observe(el);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.swiper-collection', {
+        spaceBetween: 20,
+        loop: false,
+        slidesPerView: 1.05,
+        grabCursor: true,
+        speed: 650,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 42,
+          },
+        },
       });
     </script>
   </body>
