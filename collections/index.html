@@ -83,6 +83,10 @@
         align-items: flex-start;
         overflow: hidden;
       }
+      .item-collection-wrap:hover .item-collection img {
+        transform: scale(1.07);
+        transition: transform 0.5s ease;
+      }
       .item-collection-wrap .item-collection {
         height: 100%;
         width: 100%;
@@ -93,6 +97,7 @@
         height: 101%;
         width: 101%;
         object-fit: cover;
+        transition: all 0.5s ease;
       }
       .collection-banner-block .text-block-wrapper {
         width: 100%;
@@ -240,8 +245,8 @@
         }
         .swiper-collection .swiper-button-next,
         .swiper-collection .swiper-button-prev {
-          --swiper-navigation-size: 60px;
-          --swiper-navigation-sides-offset: -20px;
+          --swiper-navigation-size: 56px;
+          --swiper-navigation-sides-offset: -18px;
         }
         .swiper-collection .swiper-button-next svg,
         .swiper-collection .swiper-button-prev svg {
@@ -706,10 +711,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
       new Swiper('.swiper-collection', {
-        spaceBetween: 20,
+        spaceBetween: 22,
         loop: false,
-        slidesPerView: 1.05,
-        grabCursor: true,
+        slidesPerView: 1.12,
+        grabCursor: false,
         speed: 650,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -719,6 +724,8 @@
           1024: {
             slidesPerView: 3,
             spaceBetween: 42,
+            grabCursor: false,
+            allowTouchMove: false,
           },
         },
       });
